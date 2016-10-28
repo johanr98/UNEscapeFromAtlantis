@@ -13,4 +13,28 @@ public class Boat {
     private int quantity;
     private boolean full;
     private String mayorTeam;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public boolean isFull() {
+        return full;
+    }
+
+    public void setFull(boolean full) {
+        this.full = full;
+    }
+
+    public String getMayorTeam() {
+        return mayorTeam;
+    }
+
+    public void setMayorTeam(String mayorTeam) {
+        this.mayorTeam = mayorTeam;
+    }
 }

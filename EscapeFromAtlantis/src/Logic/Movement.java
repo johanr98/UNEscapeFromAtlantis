@@ -12,4 +12,20 @@ package Logic;
 public class Movement {
     private String direction;
     private int numberOfTiles;
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    public int getNumberOfTiles() {
+        return numberOfTiles;
+    }
+
+    public void setNumberOfTiles(int numberOfTiles) {
+        this.numberOfTiles = numberOfTiles;
+    }
 }

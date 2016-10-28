@@ -14,4 +14,20 @@ import java.util.*;
 public class Team {
     private List<Villager> villagers;
     private String color;
+
+    public List<Villager> getVillagers() {
+        return villagers;
+    }
+
+    public void setVillagers(List<Villager> villagers) {
+        this.villagers = villagers;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

@@ -11,4 +11,12 @@ package Data;
  */
 public class Board {
     private Tile[][] board;
+
+    public Tile[][] getBoard() {
+        return board;
+    }
+
+    public void setBoard(Tile[][] board) {
+        this.board = board;
+    }
 }
