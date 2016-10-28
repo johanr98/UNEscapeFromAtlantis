@@ -10,13 +10,13 @@ package Data;
  * @author macas
  */
 public class Dice {
-    private String face;
+    private final int facesAmount=6;
+    protected String name;
+    protected String face1;
+    protected String face2;
+    protected String face3;
+    protected String face4;
+    protected String face5;
+    protected String face6;
 
-    public String getFace() {
-        return face;
-    }
-
-    public void setFace(String face) {
-        this.face = face;
-    }
 }

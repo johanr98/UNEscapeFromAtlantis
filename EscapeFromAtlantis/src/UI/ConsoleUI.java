@@ -5,6 +5,9 @@
  */
 package UI;
 
+import Data.*;
+import Logic.*;
+
 /**
  *
  * @author macas
@@ -15,7 +18,12 @@ public class ConsoleUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Prueba de Dados
+        
+        NumberDice DiceOfNumbers = new NumberDice();
+        AnimalsDice DiceOfAnimals = new AnimalsDice();
+        DiceResult ThrowDice = new DiceResult();
+        ThrowDice.result(DiceOfNumbers, DiceOfAnimals);
     }
     
 }
