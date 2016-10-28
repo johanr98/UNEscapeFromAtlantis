@@ -10,5 +10,5 @@ package Data;
  * @author macas
  */
 public class Dice {
-    
+    private String face;
 }
