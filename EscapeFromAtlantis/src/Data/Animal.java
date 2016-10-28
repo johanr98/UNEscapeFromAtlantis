@@ -9,6 +9,6 @@ package Data;
  *
  * @author macas
  */
-public class Animal {
+public abstract class Animal {
     
 }

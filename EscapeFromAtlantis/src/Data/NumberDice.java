@@ -18,6 +18,7 @@ public class NumberDice extends Dice {
         super.face5 = "5";
         super.face6 = "6";
     }
+    @Override
     public String callface(int a){
         switch(a){
             case 0:

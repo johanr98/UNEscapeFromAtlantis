@@ -20,6 +20,7 @@ public class AnimalsDice extends Dice{
         super.face6 = "Shark";
     }
     
+    @Override
     public String callface(int a){
         switch(a){
             case 0:

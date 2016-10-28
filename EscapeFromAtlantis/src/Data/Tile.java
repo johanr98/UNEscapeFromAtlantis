@@ -9,7 +9,7 @@ package Data;
  *
  * @author macas
  */
-public class Tile {
+public abstract class Tile {
     private boolean inBoard;
     private int maxPlayerQuantity;
     private String effect;

@@ -9,7 +9,7 @@ package Data;
  *
  * @author macas
  */
-public class Dice {
+public abstract class Dice {
     private final int facesAmount=6;
     protected String name;
     protected String face1;
@@ -18,5 +18,7 @@ public class Dice {
     protected String face4;
     protected String face5;
     protected String face6;
+    
+    public abstract String callface(int a);
 
 }

@@ -23,6 +23,7 @@ public class ConsoleUI {
         NumberDice DiceOfNumbers = new NumberDice();
         AnimalsDice DiceOfAnimals = new AnimalsDice();
         DiceResult ThrowDice = new DiceResult();
+        
         ThrowDice.result(DiceOfNumbers, DiceOfAnimals);
     }
     
