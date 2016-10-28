@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Logic;
+package Data;
 
 /**
  *
- * @author joseb
+ * @author macas
  */
-public class Executor {
+public class SeaSerpent extends Animal{
     
 }

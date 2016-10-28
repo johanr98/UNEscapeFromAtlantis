@@ -5,10 +5,13 @@
  */
 package Data;
 
+import java.util.*;
+
 /**
  *
- * @author joseb
+ * @author macas
  */
-public class Sea {
-    
+public class Team {
+    private List<Villager> villagers;
+    private String color;
 }
