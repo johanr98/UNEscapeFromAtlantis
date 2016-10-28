@@ -10,5 +10,5 @@ package Data;
  * @author macas
  */
 public class Board {
-    
+    private Tile[][] board;
 }
