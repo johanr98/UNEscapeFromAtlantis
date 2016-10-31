@@ -10,5 +10,14 @@ package Data;
  * @author macas
  */
 public class Shark extends Animal {
-    
+
+    public Shark(int position) {
+        super(position, 2);
+    }
+
+    @Override
+    public void doEffect() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

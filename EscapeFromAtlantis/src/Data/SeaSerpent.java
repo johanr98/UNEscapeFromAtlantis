@@ -9,6 +9,15 @@ package Data;
  *
  * @author macas
  */
-public class SeaSerpent extends Animal{
-    
+public class SeaSerpent extends Animal {
+
+    public SeaSerpent(int position) {
+        super(position, 1);
+    }
+
+    @Override
+    public void doEffect() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
