@@ -15,9 +15,4 @@ public class SandTile extends Tile {
         super(position, true, effect);
     }
 
-    @Override
-    public void removeTile() {
-
-    }
-
 }

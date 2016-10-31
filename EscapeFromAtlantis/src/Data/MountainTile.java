@@ -14,10 +14,5 @@ public class MountainTile extends Tile {
     public MountainTile(int position, boolean inBoard, String effect) {
         super(position, true, effect);
     }
-
-    @Override
-    public void removeTile() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
 }

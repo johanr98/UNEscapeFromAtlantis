@@ -20,10 +20,6 @@ public abstract class Tile {
         return inBoard;
     }
 
-    public void setInBoard(boolean inBoard) {
-        this.inBoard = inBoard;
-    }
-
     public String getEffect() {
         return effect;
     }
@@ -46,6 +42,8 @@ public abstract class Tile {
         this.effect = effect;
     }
 
-    public abstract void removeTile();
+    public void removeTile(){
+        this.inBoard= false;
+    }
 
 }

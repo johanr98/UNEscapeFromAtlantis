@@ -15,9 +15,4 @@ public class FinishTile extends Tile {
         super(position, true, "Player saved token");
     }
 
-    @Override
-    public void removeTile() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 }
