@@ -11,9 +11,13 @@ package Data;
  */
 public class FinishTile extends Tile{
 
+    public FinishTile(int position, boolean inBoard, int maxPlayerQuantity, String effect){
+        super(position, true,50, "Player saved token");
+    }
+    
     @Override
     public void removeTile() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+  
 }

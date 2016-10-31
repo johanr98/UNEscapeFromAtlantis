@@ -27,10 +27,6 @@ public abstract class Tile {
         return maxPlayerQuantity;
     }
 
-    public void setMaxPlayerQuantity(int maxPlayerQuantity) {
-        this.maxPlayerQuantity = maxPlayerQuantity;
-    }
-
     public String getEffect() {
         return effect;
     }
@@ -45,6 +41,13 @@ public abstract class Tile {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+    
+    public Tile(int position, boolean inBoard, int maxPlayerQuantity, String effect){
+        this.position=position;
+        this.inBoard=inBoard;
+        this.maxPlayerQuantity=maxPlayerQuantity;
+        this.effect=effect;
     }
     
     public abstract void removeTile();
