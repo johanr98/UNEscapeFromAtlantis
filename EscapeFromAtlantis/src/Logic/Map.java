@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package Logic;
+import Data.*;
 
 /**
  *
  * @author macas
  */
 public class Map {
-    
+    Tile[][] map= new Tile[][];
 }
