@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Logic;
+
 import Data.*;
 
 /**
@@ -11,5 +12,10 @@ import Data.*;
  * @author macas
  */
 public class Map {
-    Tile[][] map= new Tile[][];
+
+    static final int WATERTILEQUANTITY = 133;
+    static final int SALVATIONTILEQUANTITY = 12;
+    static final int SANDTILEQUANTITY = 16;
+    static final int FORESTTILEQUANTITY = 16;
+    static final int MOUNTAINTILEQUANTITY = 8;
 }
