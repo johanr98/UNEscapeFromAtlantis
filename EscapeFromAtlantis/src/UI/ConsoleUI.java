@@ -20,11 +20,11 @@ public class ConsoleUI {
     public static void main(String[] args) {
         // Prueba de Dados
         
-        NumberDice DiceOfNumbers = new NumberDice();
+        
         AnimalsDice DiceOfAnimals = new AnimalsDice();
         DiceResult ThrowDice = new DiceResult();
         
-        ThrowDice.result(DiceOfNumbers, DiceOfAnimals);
+        DiceOfAnimals.throwDice();
     }
     
 }

@@ -11,7 +11,7 @@ package Data;
  */
 public class FinishTile extends Tile {
 
-    public FinishTile(int position, boolean inBoard, String effect) {
+    public FinishTile(int position) {
         super(position, true, "Player saved token");
     }
 

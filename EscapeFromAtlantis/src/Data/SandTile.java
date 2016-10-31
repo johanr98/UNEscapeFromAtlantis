@@ -11,7 +11,7 @@ package Data;
  */
 public class SandTile extends Tile {
 
-    public SandTile(int position, boolean inBoard, int maxPlayerQuantity, String effect) {
+    public SandTile(int position, boolean inBoard, String effect) {
         super(position, true, effect);
     }
 

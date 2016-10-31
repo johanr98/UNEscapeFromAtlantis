@@ -4,16 +4,21 @@
  * and open the template in the editor.
  */
 package Logic;
-import Data.*;
 
 /**
  *
- * @author macas
+ * @author johans
  */
-public class ChangeTile {
+public class Box<T> {
 
-    public Tile changeTile(Tile tile) {
-        return new WaterTile(tile.getPosition(), true, "NONE");
+    private T t;
+
+    public T getT() {
+        return t;
+    }
+
+    public void setT(T t) {
+        this.t = t;
     }
 
 }

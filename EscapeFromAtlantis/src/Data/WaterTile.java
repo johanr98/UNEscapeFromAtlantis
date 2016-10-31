@@ -11,8 +11,8 @@ package Data;
  */
 public class WaterTile extends Tile {
 
-    public WaterTile(int position, boolean inBoard, String effect) {
-        super(position, true, effect);
+    public WaterTile(int position, boolean inBoard) {
+        super(position, true, "NULL");
     }
 
 }
