@@ -10,17 +10,9 @@ package Data;
  * @author macas
  */
 public class Villager {
-    private Team team;
+
     private int value;
     private boolean alive;
-
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
 
     public int getValue() {
         return value;

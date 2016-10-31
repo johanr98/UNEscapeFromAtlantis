@@ -12,11 +12,12 @@ package Data;
 public class Player {
 
     private String name;
-    private Team team;
+
     private Villager villagers[];
 
-    public Player(String name, Team team) {
+    public Player(String name) {
         villagers = new Villager[10];
+        this.name = name;
     }
 
     public String getName() {
@@ -27,11 +28,4 @@ public class Player {
         this.name = name;
     }
 
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
-    }
 }

@@ -10,5 +10,10 @@ package Data;
  * @author macas
  */
 public class ForestTile extends Tile {
+
+    @Override
+    public void removeTile() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
