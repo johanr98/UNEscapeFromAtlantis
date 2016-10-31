@@ -18,23 +18,5 @@ public class NumberDice extends Dice {
         super.face5 = "5";
         super.face6 = "6";
     }
-    @Override
-    public String callface(int a){
-        switch(a){
-            case 0:
-                return face1;
-            case 1:
-                return face2;
-            case 2:
-                return face3;
-            case 3:
-                return face4;
-            case 4:
-                return face5;
-            case 5:
-                return face6;
-            default:
-                return "Error";
-        }
-    }
+   
 }
