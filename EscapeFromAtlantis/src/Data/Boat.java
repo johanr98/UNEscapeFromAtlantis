@@ -10,7 +10,7 @@ package Data;
  * @author macas
  */
 public class Boat {
-    private final int maxTokenQuantity = 3;
+    private final int MAXPLAYERQUANTITY = 3;
     private int quantity;
     private boolean full;
     private String mayorTeam;
