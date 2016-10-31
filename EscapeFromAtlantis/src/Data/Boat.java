@@ -10,6 +10,7 @@ package Data;
  * @author macas
  */
 public class Boat {
+
     private final int MAXPLAYERQUANTITY = 3;
     private int quantity;
     private boolean full;
@@ -24,11 +25,11 @@ public class Boat {
     }
 
     public boolean isFull() {
-        return full;
-    }
-
-    public void setFull(boolean full) {
-        this.full = full;
+        if (this.quantity == this.MAXPLAYERQUANTITY) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public String getMayorTeam() {
