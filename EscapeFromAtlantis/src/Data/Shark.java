@@ -15,6 +15,7 @@ public class Shark extends Animal {
         super(position, 2);
     }
 
+    //tiburon no destruye barcos pero si come nadadores
     @Override
     public void doEffect() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

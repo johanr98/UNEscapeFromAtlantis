@@ -15,6 +15,7 @@ public class Whale extends Animal{
         super(position,3);
     }
 
+    //ballena destruye barcos pero no puede comerse a los nadadores
     @Override
     public void doEffect() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

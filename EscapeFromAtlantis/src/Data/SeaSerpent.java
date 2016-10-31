@@ -15,6 +15,7 @@ public class SeaSerpent extends Animal {
         super(position, 1);
     }
 
+    //serpiente marina destruye barcos y se come a los pasajeros
     @Override
     public void doEffect() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
