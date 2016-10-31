@@ -11,9 +11,8 @@ package Data;
  */
 public abstract class Tile {
 
-    private final int MAX_PLAYER = 5;
     private boolean inBoard;
-    private final int maxPlayerQuantity;
+    private final int MAXPLAYERQUANTITY = 5;
     private String effect;
     private int position;
 
