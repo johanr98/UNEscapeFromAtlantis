@@ -14,7 +14,7 @@ public class AnimalsDice extends Dice{
     public AnimalsDice(){
         super.face1 = "GiantSquid";
         super.face2 = "SeaSerpent";
-        super.face3 = "Dolphin";
+        super.face3 = "Whale";
         super.face4 = "GiantSquid";
         super.face5 = "Shark";
         super.face6 = "Shark";

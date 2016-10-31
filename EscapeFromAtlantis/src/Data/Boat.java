@@ -35,7 +35,7 @@ public class Boat {
     public String getMayorTeam() {
         return mayorTeam;
     }
-
+    
     public void setMayorTeam(String mayorTeam) {
         this.mayorTeam = mayorTeam;
     }
