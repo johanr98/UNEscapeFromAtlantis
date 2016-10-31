@@ -13,7 +13,7 @@ public abstract class Tile {
 
     private final int MAX_PLAYER = 5;
     private boolean inBoard;
-    private final int maxPlayerQuantity;
+
     private String effect;
     private int position;
 
@@ -23,10 +23,6 @@ public abstract class Tile {
 
     public void setInBoard(boolean inBoard) {
         this.inBoard = inBoard;
-    }
-
-    public int getMaxPlayerQuantity() {
-        return maxPlayerQuantity;
     }
 
     public String getEffect() {
@@ -48,7 +44,6 @@ public abstract class Tile {
     public Tile(int position, boolean inBoard, String effect) {
         this.position = position;
         this.inBoard = inBoard;
-
         this.effect = effect;
     }
 
