@@ -9,17 +9,15 @@ package Data;
  *
  * @author macas
  */
-public class WaterTile extends Tile{
+public class WaterTile extends Tile {
 
-    public WaterTile(int position, boolean inBoard, int maxPlayerQuantity, String effect){
-        super(position, true,5, "NONE");
+    public WaterTile(int position, boolean inBoard, String effect) {
+        super(position, true, effect);
     }
-    
+
     @Override
     public void removeTile() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-   
-    
 }

@@ -10,6 +10,8 @@ package Data;
  * @author macas
  */
 public abstract class Tile {
+
+    private final int MAX_PLAYER = 5;
     private boolean inBoard;
     private int maxPlayerQuantity;
     private String effect;
@@ -42,14 +44,14 @@ public abstract class Tile {
     public void setPosition(int position) {
         this.position = position;
     }
-    
-    public Tile(int position, boolean inBoard, int maxPlayerQuantity, String effect){
-        this.position=position;
-        this.inBoard=inBoard;
-        this.maxPlayerQuantity=maxPlayerQuantity;
-        this.effect=effect;
+
+    public Tile(int position, boolean inBoard, String effect) {
+        this.position = position;
+        this.inBoard = inBoard;
+
+        this.effect = effect;
     }
-    
+
     public abstract void removeTile();
-    
+
 }
