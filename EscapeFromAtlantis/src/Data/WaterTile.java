@@ -10,5 +10,7 @@ package Data;
  * @author macas
  */
 public class WaterTile extends Tile{
+
+   
     
 }

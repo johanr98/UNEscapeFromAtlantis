@@ -10,8 +10,14 @@ package Data;
  * @author macas
  */
 public class Player {
+
     private String name;
     private Team team;
+    private Villager villagers[];
+
+    public Player(String name, Team team) {
+        villagers = new Villager[10];
+    }
 
     public String getName() {
         return name;

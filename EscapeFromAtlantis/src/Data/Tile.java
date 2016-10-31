@@ -46,4 +46,7 @@ public abstract class Tile {
     public void setPosition(int position) {
         this.position = position;
     }
+    
+    public abstract void removeTile();
+    
 }
