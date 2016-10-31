@@ -19,6 +19,9 @@ public abstract class Dice {
     protected String face5;
     protected String face6;
     
+    //johan :  
+    //yo creeria que se puede hacer uso de Enum para que sea mas versatil
+    
     public abstract String callface(int a);
 
 }
