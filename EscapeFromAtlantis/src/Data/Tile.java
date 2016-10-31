@@ -13,7 +13,7 @@ public abstract class Tile {
 
     private final int MAX_PLAYER = 5;
     private boolean inBoard;
-    private int maxPlayerQuantity;
+    private final int maxPlayerQuantity;
     private String effect;
     private int position;
 
