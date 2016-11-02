@@ -13,7 +13,9 @@ public class Villager {
 
     private int value;
     private boolean alive;
+
     private int tilePosition;
+
 
     public int getValue() {
         return value;

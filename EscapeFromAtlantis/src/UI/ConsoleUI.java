@@ -7,7 +7,11 @@ package UI;
 
 import Data.*;
 import Logic.*;
+<<<<<<< HEAD
+import java.util.Scanner;
+=======
 import java.util.*;
+>>>>>>> origin/master
 
 /**
  *

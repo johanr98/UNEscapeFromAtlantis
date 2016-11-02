@@ -12,7 +12,6 @@ package Data;
 public class Player {
 
     private String name;
-
     private Villager villagers[];
 
     public Player(String name) {
