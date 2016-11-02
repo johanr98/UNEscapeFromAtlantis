@@ -36,7 +36,7 @@ public class Movement {
         int x = Math.abs(posX - village.getPositionX());
         int y = Math.abs(posY - village.getPositionY());
 
-        if (x > 1 || y > 1 || (village.getPositionX() == x || village.getPositionY() == y) || (x == 0 || y == 0)) {
+        if (x != 1 || y != 1 || (village.getPositionX() == x || village.getPositionY() == y) || (x == 0 || y == 0)) {
             System.out.println("Ingrese una opción valida!!"
                     + " pierde turno");
         } else {
