@@ -30,10 +30,15 @@ public class ConsoleUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+<<<<<<< HEAD
 
         System.out.println("Ingrese");
         Player player1 = new Player()
 
+=======
+        // Prueba de Dados
+        
+>>>>>>> origin/master
     }
 
 }
