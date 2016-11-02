@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package Data;
+
 import java.util.Random;
+
 /**
  *
  * @author macas
@@ -13,8 +15,6 @@ public class Villager {
 
     private int value;
     private boolean alive;
-    private Random rand;
-    
 
     private int positionX;
     private int positionY;

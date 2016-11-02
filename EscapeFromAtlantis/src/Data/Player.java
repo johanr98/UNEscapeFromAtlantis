@@ -5,7 +5,6 @@
  */
 package Data;
 
-
 /**
  *
  * @author macas
@@ -14,23 +13,18 @@ public class Player {
 
     private String name;
     private Villager villagers1;
-    private Villager villagers2;
+
     private int x;
     private int y;
-    
-    
 
     public Player(String name, int x, int y) {
         this.name = name;
-        this.x=x;
-        this.y=y;
-        
+        this.x = x;
+        this.y = y;
 
-        villagers1 = new Villager(x,y);
-        villagers2 = new Villager(x,y);
+        villagers1 = new Villager(x, y);
 
         villagers1.setValue(1);
-        villagers2.setValue(2);
 
         /**
          * villagers[2].setValue(1); villagers[3].setValue(2);
@@ -50,10 +44,6 @@ public class Player {
 
     public Villager getVillager1() {
         return villagers1;
-    }
-
-    public Villager getVillager2() {
-        return villagers2;
     }
 
 }
