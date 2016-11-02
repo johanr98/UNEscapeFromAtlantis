@@ -92,14 +92,16 @@ public class GameMaster {
             y = consola.returnInt();
 
             moveVillagers(player1.getVillager1(), x, y);
+
             map.printBoard(player1, player2);
+            v = endGame(player1.getVillager1());
             consola.printString("Sigue moviendo tus habitantes hacia la salvación!!");
             consola.printString(player2.getName() + " Mueve a tus habitantes (x,y)");
             x = consola.returnInt();
             y = consola.returnInt();
             moveVillagers(player2.getVillager1(), x, y);
             map.printBoard(player1, player2);
-            v = endGame(player1.getVillager1());
+
             w = endGame(player2.getVillager1());
         }
 
