@@ -80,7 +80,7 @@ public class GameMaster {
         map.printBoard(player1, player2);
         int v = 0;
         int w = 0;
-        while (v==0 || w==0) {
+        while (v==0 && w==0) {
             consola.printString("Sigue moviendo tus habitantes hacia la salvación!!");
             consola.printString(player1.getName() + " Mueve a tus habitantes (x,y)");
             x = consola.returnInt();
