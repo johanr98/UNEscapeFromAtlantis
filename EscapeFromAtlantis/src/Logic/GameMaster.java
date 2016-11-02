@@ -78,7 +78,9 @@ public class GameMaster {
 
         consola.printString("");
         map.printBoard(player1, player2);
-        while (true) {
+        int v = 0;
+        int w = 0;
+        while (v==0 || w==0) {
             consola.printString("Sigue moviendo tus habitantes hacia la salvación!!");
             consola.printString(player1.getName() + " Mueve a tus habitantes (x,y)");
             x = consola.returnInt();
@@ -91,6 +93,8 @@ public class GameMaster {
             y = consola.returnInt();
             moveVillagers(player2.getVillager1(), x, y);
             map.printBoard(player1, player2);
+            v=endGame(player1.getVillager1());
+            w=endGame(player2.getVillager1());
         }
 
     }
@@ -102,4 +106,15 @@ public class GameMaster {
     /**
      * Agrega las fichas del jugador
      */
+    
+    public int endGame(Villager villager){
+        if((villager.getPositionX()==0 && villager.getPositionY()==0  )|| 
+                ((villager.getPositionX()==4&& villager.getPositionY()==0 ))){
+            System.out.println("Fin del juego.");
+            System.out.println();
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

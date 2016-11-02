@@ -47,11 +47,7 @@ public class ConsoleUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-<<<<<<< HEAD
-
-        ConsoleUI consola = new ConsoleUI();
-=======
->>>>>>> origin/master
+        
         WaterTile test = new WaterTile(5, true);
         ForestTile test2 = new ForestTile(5, true, "None");
         MountainTile test3 = new MountainTile(5, true, "None");
@@ -60,6 +56,7 @@ public class ConsoleUI {
         Board test6 = new Board(test3, test2, test5, test, test4);
 
         ConsoleUI consola = new ConsoleUI(test6);
+        
 
     }
 
