@@ -5,6 +5,7 @@
  */
 package Data;
 
+
 /**
  *
  * @author macas
@@ -14,12 +15,19 @@ public class Player {
     private String name;
     private Villager villagers1;
     private Villager villagers2;
+    private int x;
+    private int y;
+    
+    
 
-    public Player(String name) {
+    public Player(String name, int x, int y) {
         this.name = name;
+        this.x=x;
+        this.y=y;
+        
 
-        villagers1 = new Villager();
-        villagers2 = new Villager();
+        villagers1 = new Villager(x,y);
+        villagers2 = new Villager(x,y);
 
         villagers1.setValue(1);
         villagers2.setValue(2);

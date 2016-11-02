@@ -28,7 +28,6 @@ public class MapManager {
     }
 
     public void addVillagers(Villager villager, int x, int y) {
-
         movement.moveVillage(villager, x, y);
     }
 
