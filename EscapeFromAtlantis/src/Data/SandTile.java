@@ -11,16 +11,23 @@ package Data;
  */
 public class SandTile extends Tile {
 
-    private String[] inside;
+    private String inside;
+
+    public String getInside() {
+        return inside;
+    }
+
+    public void setInside(String inside) {
+        this.inside = inside;
+    }
     
     public SandTile(int position, boolean inBoard, String effect) {
         super(position, true, effect);
-        inside = new String[1];
-        inside [0] = "=";
+        inside = "=";
     }
     
     public void printSandTile(SandTile x){
-        System.out.print(x.inside[0]);
+        System.out.print(x.inside);
     }
 
 }
