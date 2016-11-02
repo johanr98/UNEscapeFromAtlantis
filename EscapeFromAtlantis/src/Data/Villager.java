@@ -13,6 +13,7 @@ public class Villager {
 
     private int value;
     private boolean alive;
+    
 
     private int positionX;
     private int positionY;
