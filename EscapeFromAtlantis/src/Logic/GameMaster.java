@@ -20,8 +20,13 @@ public class GameMaster {
 
     public GameMaster(ConsoleUI consola) {
         this.consola = consola;
+        FinishTile f = new FinishTile(0);
+        ForestTile fo = new ForestTile(0, true, "None");
+        MountainTile m = new MountainTile(0, true, "None");
+        SandTile s = new SandTile(0, true, "None");
+        WaterTile w = new WaterTile(0, true);
 
-        map = new Board();
+        map = new Board(m, fo, s, w, f);
         mapManager = new MapManager(map);
 
         start();
