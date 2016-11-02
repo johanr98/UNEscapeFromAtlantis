@@ -48,7 +48,7 @@ public class ConsoleUI {
      */
     public static void main(String[] args) {
 
-        ConsoleUI consola = new ConsoleUI();
+        //ConsoleUI consola = new ConsoleUI();
         WaterTile test = new WaterTile(5, true);
         ForestTile test2 = new ForestTile(5, true, "None");
         MountainTile test3 = new MountainTile(5, true, "None");
