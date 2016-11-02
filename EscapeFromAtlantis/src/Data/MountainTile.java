@@ -11,8 +11,16 @@ package Data;
  */
 public class MountainTile extends Tile {
 
+    private String[] inside;
+    
     public MountainTile(int position, boolean inBoard, String effect) {
         super(position, true, effect);
+        inside = new String[1];
+        inside [0] = "^";
+    }
+    
+    public void printMountainTile(MountainTile x){
+        System.out.print(x.inside[0]);
     }
     
 }

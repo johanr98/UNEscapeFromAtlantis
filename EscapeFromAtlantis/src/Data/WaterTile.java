@@ -18,18 +18,7 @@ public class WaterTile extends Tile {
         inside = new String[1];
         inside [0] = "~";
     }
-    
-//    public void printWaterTile(WaterTile x){
-//        for(int i=1; i<4; i++){
-//            for(int j=1; j<2; j++){
-//                if(i<3){
-//                    System.out.println(x.inside[i][j]);
-//                }else{
-//                    System.out.print(x.inside[i][j]);
-//                }
-//            }
-//        }
-//    }
+
     public void printWaterTile(WaterTile x){
         System.out.print(x.inside[0]);
     }

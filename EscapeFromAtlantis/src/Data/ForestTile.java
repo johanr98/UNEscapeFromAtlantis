@@ -10,9 +10,17 @@ package Data;
  * @author macas
  */
 public class ForestTile extends Tile {
+   
+    private String[] inside;
 
     public ForestTile(int position, boolean inBoard, String effect) {
         super(position, true, effect);
+        inside = new String[1];
+        inside [0] = "T";
+    }
+    
+    public void printForestTile(ForestTile x){
+        System.out.print(x.inside[0]);
     }
 
 }
