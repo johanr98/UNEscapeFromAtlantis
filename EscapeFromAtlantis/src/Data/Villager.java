@@ -13,6 +13,7 @@ public class Villager {
 
     private int value;
     private boolean alive;
+    
 
     public int getValue() {
         return value;

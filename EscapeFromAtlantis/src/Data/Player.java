@@ -12,12 +12,12 @@ package Data;
 public class Player {
 
     private String name;
-
     private Villager villagers[];
+    
 
     public Player(String name) {
         this.name = name;
-
+        
         villagers = new Villager[10];
 
         villagers[0].setValue(1);
@@ -30,6 +30,10 @@ public class Player {
         villagers[7].setValue(4);
         villagers[8].setValue(5);
         villagers[9].setValue(6);
+        
+        
+        
+        
 
     }
 
