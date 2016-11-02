@@ -11,8 +11,18 @@ package Data;
  */
 public class FinishTile extends Tile {
 
+    private String[] inside;
+    
     public FinishTile(int position) {
         super(position, true, "Player saved token");
+        inside = new String[1];
+        inside [0] = "-";
     }
+    
+    public void printFinishTile(FinishTile x){
+        System.out.print(x.inside[0]);
+    }
+    
+    
 
 }
