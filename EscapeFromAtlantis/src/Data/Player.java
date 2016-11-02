@@ -12,15 +12,17 @@ package Data;
 public class Player {
 
     private String name;
-    private Villager villagers[];
+    private Villager villagers1;
+    private Villager villagers2;
 
     public Player(String name) {
         this.name = name;
 
-        villagers = new Villager[2];
+        villagers1 = new Villager();
+        villagers2 = new Villager();
 
-        villagers[0].setValue(1);
-        villagers[1].setValue(2);
+        villagers1.setValue(1);
+        villagers2.setValue(2);
 
         /**
          * villagers[2].setValue(1); villagers[3].setValue(2);
@@ -38,8 +40,12 @@ public class Player {
         this.name = name;
     }
 
-    public Villager[] getVillagers() {
-        return villagers;
+    public Villager getVillager1() {
+        return villagers1;
+    }
+
+    public Villager getVillager2() {
+        return villagers2;
     }
 
 }

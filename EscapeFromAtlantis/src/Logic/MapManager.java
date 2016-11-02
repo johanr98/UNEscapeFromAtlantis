@@ -23,6 +23,7 @@ public class MapManager {
 
     public MapManager(Board map) {
         this.map = map;
+        movement = new Movement();
 
     }
 

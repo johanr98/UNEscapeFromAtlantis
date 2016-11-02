@@ -62,13 +62,17 @@ public class GameMaster {
 
         consola.printString(player1.getName() + " posiciona tus habitantes dentro del mapa");
         consola.printString("Ingresa la posicion (x,y) de tus habitantes");
-
-        mapManager.addVillagers(player1.getVillagers()[0], consola.returnInt(), consola.returnInt());
-        mapManager.addVillagers(player1.getVillagers()[1], consola.returnInt(), consola.returnInt());
-
+        consola.printString("");
+        int x = consola.returnInt();
+        int y = consola.returnInt();
+        mapManager.addVillagers(player1.getVillager1(), x, y);
+        mapManager.addVillagers(player1.getVillager1(), x, y);
+        consola.printString("");
         consola.printString(player2.getName() + " posiciona tus habitantes dentro del mapa");
-        mapManager.addVillagers(player2.getVillagers()[0], consola.returnInt(), consola.returnInt());
-        mapManager.addVillagers(player2.getVillagers()[1], consola.returnInt(), consola.returnInt());
+        x = consola.returnInt();
+        y = consola.returnInt();
+        mapManager.addVillagers(player2.getVillager1(), x, y);
+        mapManager.addVillagers(player2.getVillager1(), x, y);
 
     }
 
