@@ -13,7 +13,34 @@ import UI.*;
  */
 public class GameMaster {
 
+    private ConsoleUI consola;
+
     public GameMaster(ConsoleUI consola) {
+        this.consola = consola;
+    }
+
+    public void start() {
+        consola.menu();
+        outerloop:
+        while (true) {
+
+            switch (consola.returnInt()) {
+
+                case 1:
+                    play();
+                    break outerloop;
+                case 0:
+                    System.exit(0);
+                    break;
+                default:
+                    consola.printString("Ingresa de nuevo el valor");
+                    break;
+
+            }
+        }
+    }
+
+    public void play() {
 
     }
 
