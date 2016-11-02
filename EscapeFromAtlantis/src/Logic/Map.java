@@ -22,24 +22,37 @@ public class Map {
     private Box<Tile> box[][];
 
     public Map() {
-//        box = new Box[13][25];
-//
-//        //salvacion Esquina izquierda superior
-//        box[0][2].setT(new FinishTile(1));
-//        box[1][1].setT(new FinishTile(10));
-//        box[2][0].setT(new FinishTile(22));
-//        //salvacion Esquina derecha superior
-//        box[0][22].setT(new FinishTile(9));
-//        box[1][23].setT(new FinishTile(19));
-//        box[2][24].setT(new FinishTile(30));
-//        //salvacion esquina inferior izquierda
-//        box[10][0].setT(new FinishTile(112));
-//        box[11][1].setT(new FinishTile(124));
-//        box[12][2].setT(new FinishTile(136));
-//        //salvacion esquina inferior derecha
-//        box[10][24].setT(new FinishTile(123));
-//        box[11][23].setT(new FinishTile(135));
-//        box[12][22].setT(new FinishTile(144));
+
+        int k = 1;
+        box = new Box[5][5];
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                box[i][j].setT(new WaterTile(k, true));
+            }
+
+        }
+
+
+        /*
+        MAPA VERDADERO
+         */ //        box = new Box[13][25];
+        //
+        //        //salvacion Esquina izquierda superior
+        //        box[0][2].setT(new FinishTile(1));
+        //        box[1][1].setT(new FinishTile(10));
+        //        box[2][0].setT(new FinishTile(22));
+        //        //salvacion Esquina derecha superior
+        //        box[0][22].setT(new FinishTile(9));
+        //        box[1][23].setT(new FinishTile(19));
+        //        box[2][24].setT(new FinishTile(30));
+        //        //salvacion esquina inferior izquierda
+        //        box[10][0].setT(new FinishTile(112));
+        //        box[11][1].setT(new FinishTile(124));
+        //        box[12][2].setT(new FinishTile(136));
+        //        //salvacion esquina inferior derecha
+        //        box[10][24].setT(new FinishTile(123));
+        //        box[11][23].setT(new FinishTile(135));
+        //        box[12][22].setT(new FinishTile(144));
     }
 
 }

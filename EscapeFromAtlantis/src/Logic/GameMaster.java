@@ -15,10 +15,11 @@ import Data.*;
 public class GameMaster {
 
     private ConsoleUI consola;
+    private Map map;
 
     public GameMaster(ConsoleUI consola) {
         this.consola = consola;
-        
+
         start();
     }
 
@@ -48,7 +49,17 @@ public class GameMaster {
         Player player1 = consola.initializePlayer();
         consola.printString("Datos del jugador 2");
         Player player2 = consola.initializePlayer();
+        consola.printString("");
 
+    }
+
+    /**
+     * Agrega las fichas del jugador
+     */
+    public void addPeople(Player player) {
+
+        
+        
     }
 
 }

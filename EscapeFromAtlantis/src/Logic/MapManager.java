@@ -13,14 +13,15 @@ import Data.*;
  */
 public class MapManager {
 
+    private Map map;
+
     public Tile changeTile(Tile tile) {
         return new WaterTile(tile.getPosition(), true);
     }
-    
-    public void comprobation(Tile tile){
-        
-        
-        
+
+    public MapManager(Map map) {
+        this.map = map;
+
     }
 
 }
