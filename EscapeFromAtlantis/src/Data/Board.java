@@ -11,6 +11,11 @@ package Data;
  */
 public class Board {
     private Tile[][] board;
+    
+    public Board(WaterTile x){
+        board = new Tile[5][5];
+        board [1][5] = x;
+    }
 
     public Tile[][] getBoard() {
         return board;

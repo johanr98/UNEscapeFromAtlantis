@@ -7,7 +7,7 @@ package UI;
 
 import Data.*;
 import Logic.*;
-import com.sun.org.glassfish.gmbal.GmbalException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -50,6 +50,10 @@ public class ConsoleUI {
     public static void main(String[] args) {
 
         ConsoleUI consola = new ConsoleUI();
+        
+        WaterTile test = new WaterTile(5,true);
+        test.printWaterTile(test);
+        
 
     }
 

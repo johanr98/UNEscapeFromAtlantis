@@ -12,7 +12,7 @@ package Data;
 public abstract class Tile {
 
     private boolean inBoard;
-    private final int MAXPLAYERQUANTITY = 5;
+    private final int MAXPLAYERQUANTITY = 3;
     private String effect;
     private int position;
 
