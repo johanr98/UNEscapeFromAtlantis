@@ -14,18 +14,7 @@ import UI.*;
 public class GameMaster {
 
     public GameMaster(ConsoleUI consola) {
-            
-        
-         
-        
-        
-        
-        
-        
-        
-        
-         
-        
+
     }
 
 }

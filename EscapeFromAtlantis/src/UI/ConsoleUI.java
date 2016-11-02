@@ -7,12 +7,20 @@ package UI;
 
 import Data.*;
 import Logic.*;
+import java.util.Scanner;
 
 /**
  *
  * @author macas
  */
 public class ConsoleUI {
+
+    private Scanner lector = new Scanner(System.in);
+
+    public Player initializePlayer() {
+        System.out.println("Ingrese el nombre del nuevo jugador:");
+        return new Player(lector.nextLine());
+    }
 
     /**
      * @param args the command line arguments
