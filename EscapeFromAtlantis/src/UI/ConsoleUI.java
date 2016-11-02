@@ -48,10 +48,13 @@ public class ConsoleUI {
      */
     public static void main(String[] args) {
 
-        ConsoleUI consola = new ConsoleUI();
+        //ConsoleUI consola = new ConsoleUI();
         
         WaterTile test = new WaterTile(5,true);
         test.printWaterTile(test);
+        
+        Board test2 = new Board(test);
+        //test2.printBoard(test2);
         
 
     }
