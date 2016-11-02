@@ -18,15 +18,10 @@ public class GameMaster {
     private Board map;
     private MapManager mapManager;
 
-    public GameMaster(ConsoleUI consola) {
+    public GameMaster(ConsoleUI consola, Board board) {
         this.consola = consola;
-        FinishTile f = new FinishTile(0);
-        ForestTile fo = new ForestTile(0, true, "None");
-        MountainTile m = new MountainTile(0, true, "None");
-        SandTile s = new SandTile(0, true, "None");
-        WaterTile w = new WaterTile(0, true);
 
-        map = new Board(m, fo, s, w, f);
+        map = board;
         mapManager = new MapManager(map);
 
         start();
@@ -59,7 +54,11 @@ public class GameMaster {
         Player player1 = consola.initializePlayer();
         consola.printString("Datos del jugador 2");
         Player player2 = consola.initializePlayer();
+        consola.printString("");
 
+        map.printBoard(player1, player2);
+
+        consola.printString("");
         consola.printString(player1.getName() + " posiciona tus habitantes dentro del mapa");
         consola.printString("Ingresa la posicion (x,y) de tus habitantes");
         consola.printString("");
@@ -68,12 +67,36 @@ public class GameMaster {
         mapManager.addVillagers(player1.getVillager1(), x, y);
         mapManager.addVillagers(player1.getVillager1(), x, y);
         consola.printString("");
+
+        map.printBoard(player1, player2);
+
         consola.printString(player2.getName() + " posiciona tus habitantes dentro del mapa");
         x = consola.returnInt();
         y = consola.returnInt();
         mapManager.addVillagers(player2.getVillager1(), x, y);
         mapManager.addVillagers(player2.getVillager1(), x, y);
 
+        consola.printString("");
+        map.printBoard(player1, player2);
+        while (true) {
+            consola.printString("Sigue moviendo tus habitantes hacia la salvación!!");
+            consola.printString(player1.getName() + " Mueve a tus habitantes (x,y)");
+            x = consola.returnInt();
+            y = consola.returnInt();
+            moveVillagers(player1.getVillager1(), x, y);
+            map.printBoard(player1, player2);
+            consola.printString("Sigue moviendo tus habitantes hacia la salvación!!");
+            consola.printString(player2.getName() + " Mueve a tus habitantes (x,y)");
+            x = consola.returnInt();
+            y = consola.returnInt();
+            moveVillagers(player2.getVillager1(), x, y);
+            map.printBoard(player1, player2);
+        }
+
+    }
+
+    public void moveVillagers(Villager villager, int x, int y) {
+        villager.setTilePosition(x, y);
     }
 
     /**

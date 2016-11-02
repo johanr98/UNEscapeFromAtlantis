@@ -17,6 +17,8 @@ public class Board {
     static final int FORESTTILEQUANTITY = 16;
     static final int MOUNTAINTILEQUANTITY = 8;
 
+    private Player player1;
+    private Player player2;
     private Box<Tile> box[][];
     private String[][] board;
 
@@ -51,10 +53,18 @@ public class Board {
 
     }
 
-    public void printBoard(Board x) {
+    public void printBoard(Player player1, Player player2) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.print(board[i][j]);
+                if (player1.getVillager1().getPositionX() == i && player1.getVillager1().getPositionY() == j) {
+                    System.out.print(1);
+
+                } else if (player2.getVillager1().getPositionX() == i && player2.getVillager1().getPositionY() == j) {
+                    System.out.print(2);
+                } else {
+                    System.out.print(board[i][j]);
+                }
+
             }
             System.out.println("");
         }

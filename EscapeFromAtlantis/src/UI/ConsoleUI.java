@@ -18,8 +18,8 @@ public class ConsoleUI {
     private Scanner lector = new Scanner(System.in);
     private GameMaster gameMaster;
 
-    public ConsoleUI() {
-        gameMaster = new GameMaster(this);
+    public ConsoleUI(Board board) {
+        gameMaster = new GameMaster(this, board);
 
     }
 
@@ -47,15 +47,14 @@ public class ConsoleUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-        //ConsoleUI consola = new ConsoleUI();
         WaterTile test = new WaterTile(5, true);
         ForestTile test2 = new ForestTile(5, true, "None");
         MountainTile test3 = new MountainTile(5, true, "None");
         FinishTile test4 = new FinishTile(5);
         SandTile test5 = new SandTile(5, true, "None");
         Board test6 = new Board(test3, test2, test5, test, test4);
-        test6.printBoard(test6);
+
+        ConsoleUI consola = new ConsoleUI(test6);
 
     }
 
