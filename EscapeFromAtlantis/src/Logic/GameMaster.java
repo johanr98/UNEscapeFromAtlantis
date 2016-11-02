@@ -6,6 +6,7 @@
 package Logic;
 
 import UI.*;
+import Data.*;
 
 /**
  *
@@ -41,6 +42,10 @@ public class GameMaster {
     }
 
     public void play() {
+        consola.printString("Datos del jugador 1");
+        Player player1 = consola.initializePlayer();
+        consola.printString("Datos del jugador 2");
+        Player player2 = consola.initializePlayer();
 
     }
 
