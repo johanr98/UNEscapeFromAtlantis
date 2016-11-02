@@ -23,8 +23,8 @@ public class Board {
     }
     
     public void printBoard(Board x){
-        for(int i=1; i<6; i++){
-            for(int j=1; j<6; j++){
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
                 System.out.println(x.board[i][j]);
             }
         }
