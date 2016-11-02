@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Logic;
-
+import Data.*;
 /**
  *
  * @author macas
@@ -27,5 +27,8 @@ public class Movement {
 
     public void setNumberOfTiles(int numberOfTiles) {
         this.numberOfTiles = numberOfTiles;
+    }
+    public void moveVillage (Villager village, int posX, int posY){
+        
     }
 }
