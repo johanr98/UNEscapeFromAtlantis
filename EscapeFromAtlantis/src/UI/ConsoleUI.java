@@ -50,11 +50,7 @@ public class ConsoleUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> origin/master
         WaterTile test = new WaterTile(5, true);
         ForestTile test2 = new ForestTile(5, true, "None");
         MountainTile test3 = new MountainTile(5, true, "None");
