@@ -7,6 +7,7 @@ package UI;
 
 import Data.*;
 import Logic.*;
+import java.util.Scanner;
 
 /**
  *
@@ -14,17 +15,25 @@ import Logic.*;
  */
 public class ConsoleUI {
 
+    private Scanner lector = new Scanner(System.in);
+
+    public Player initializePlayer() {
+        System.out.println("Ingrese el nombre del jugador");
+        return new Player(lector.nextLine());
+    }
+
+    public ConsoleUI() {
+
+    }
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Prueba de Dados
-        
-        
-        AnimalsDice DiceOfAnimals = new AnimalsDice();
-        DiceResult ThrowDice = new DiceResult();
-        
-        DiceOfAnimals.throwDice();
+
+        System.out.println("Ingrese");
+        Player player1 = new Player()
+
     }
-    
+
 }
