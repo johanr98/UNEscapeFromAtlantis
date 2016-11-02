@@ -35,10 +35,11 @@ public class Movement {
     public void moveVillage(Villager village, int posX, int posY) {
         int x = Math.abs(posX - village.getPositionX());
         int y = Math.abs(posY - village.getPositionY());
-
+            System.out.println(village.getPositionX()+" "+village.getPositionY()+" "+posX+" "+posY);
         if (x != 1 || y != 1 || (village.getPositionX() == x || village.getPositionY() == y) || (x == 0 || y == 0)) {
             System.out.println("Ingrese una opción valida!!"
                     + " pierde turno");
+            System.out.println(village.getPositionX()+" "+village.getPositionY());
         } else {
 
             village.setTilePosition(posX, posY);
