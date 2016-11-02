@@ -11,12 +11,12 @@ package Data;
  */
 public class WaterTile extends Tile {
     
-    private String[][] inside;
+    private String[] inside;
     
     public WaterTile(int position, boolean inBoard) {
         super(position, true, "NULL");
-        inside = new String[1][1];
-        inside [0][0] = "~";
+        inside = new String[1];
+        inside [0] = "~";
     }
     
 //    public void printWaterTile(WaterTile x){
@@ -31,7 +31,7 @@ public class WaterTile extends Tile {
 //        }
 //    }
     public void printWaterTile(WaterTile x){
-        System.out.print(x.inside[0][0]);
+        System.out.print(x.inside[0]);
     }
 
 }
