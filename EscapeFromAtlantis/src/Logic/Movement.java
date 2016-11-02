@@ -29,6 +29,6 @@ public class Movement {
         this.numberOfTiles = numberOfTiles;
     }
     public void moveVillage (Villager village, int posX, int posY){
-        
+        village.setTilePosition(posX, posY);
     }
 }

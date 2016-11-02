@@ -14,8 +14,11 @@ public class Villager {
     private int value;
     private boolean alive;
 
-    private int tilePosition;
-
+    private int tilePosition[];
+    
+    public Villager(){
+        
+    }
 
     public int getValue() {
         return value;
@@ -33,7 +36,12 @@ public class Villager {
         this.alive = alive;
     }
 
-    public int getTilePosition() {
+    public int[] getTilePosition() {
         return tilePosition;
+    }
+
+    public void setTilePosition(int x, int y) {
+        tilePosition[0] = x;
+        tilePosition[1] = y;
     }
 }

@@ -42,8 +42,8 @@ public abstract class Tile {
         this.effect = effect;
     }
 
-    public void removeTile(){
-        this.inBoard= false;
+    public void removeTile() {
+        this.inBoard = false;
     }
 
 }

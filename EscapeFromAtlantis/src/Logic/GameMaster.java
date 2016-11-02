@@ -15,10 +15,14 @@ import Data.*;
 public class GameMaster {
 
     private ConsoleUI consola;
-    private Map map;
+    private Board map;
+    private MapManager mapManager;
 
     public GameMaster(ConsoleUI consola) {
         this.consola = consola;
+
+        map = new Board();
+        mapManager = new MapManager(map);
 
         start();
     }
@@ -45,21 +49,25 @@ public class GameMaster {
     }
 
     public void play() {
+
         consola.printString("Datos del jugador 1");
         Player player1 = consola.initializePlayer();
         consola.printString("Datos del jugador 2");
         Player player2 = consola.initializePlayer();
-        consola.printString("");
+
+        consola.printString(player1.getName() + " posiciona tus habitantes dentro del mapa");
+        consola.printString("Ingresa la posicion (x,y) de tus habitantes");
+
+        mapManager.addVillagers(player1.getVillagers()[0], consola.returnInt(), consola.returnInt());
+        mapManager.addVillagers(player1.getVillagers()[1], consola.returnInt(), consola.returnInt());
+
+        consola.printString(player2.getName() + " posiciona tus habitantes dentro del mapa");
+        mapManager.addVillagers(player2.getVillagers()[0], consola.returnInt(), consola.returnInt());
+        mapManager.addVillagers(player2.getVillagers()[1], consola.returnInt(), consola.returnInt());
 
     }
 
     /**
      * Agrega las fichas del jugador
      */
-    public void addPeople(Player player) {
-
-        
-        
-    }
-
 }

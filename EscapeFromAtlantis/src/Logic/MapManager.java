@@ -6,6 +6,7 @@
 package Logic;
 
 import Data.*;
+import UI.*;
 
 /**
  *
@@ -13,14 +14,21 @@ import Data.*;
  */
 public class MapManager {
 
-    private Map map;
+    private Movement movement;
+    private Board map;
 
     public Tile changeTile(Tile tile) {
         return new WaterTile(tile.getPosition(), true);
     }
 
-    public MapManager(Map map) {
+    public MapManager(Board map) {
         this.map = map;
+
+    }
+
+    public void addVillagers(Villager villager, int x, int y) {
+
+        movement.moveVillage(villager, x, y);
 
     }
 

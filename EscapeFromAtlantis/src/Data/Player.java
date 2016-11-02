@@ -20,7 +20,7 @@ public class Player {
         villagers = new Villager[2];
 
         villagers[0].setValue(1);
-        villagers[1].setValue(1);
+        villagers[1].setValue(2);
 
         /**
          * villagers[2].setValue(1); villagers[3].setValue(2);
