@@ -11,6 +11,24 @@ package Data;
  */
 public class Board {
     private Tile[][] board;
+    
+    public Board(WaterTile x){
+        board = new Tile[6][6];
+        for(int i=1; i<6; i++){
+            for(int j=1; j<6; j++){
+                board [i][j]=x;
+                x.printWaterTile(x);
+            }System.out.println("");
+        }
+    }
+    
+    public void printBoard(Board x){
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                System.out.println(x.board[i][j]);
+            }
+        }
+    }
 
     public Tile[][] getBoard() {
         return board;

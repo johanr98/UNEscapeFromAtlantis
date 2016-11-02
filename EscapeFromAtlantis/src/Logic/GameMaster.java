@@ -18,6 +18,8 @@ public class GameMaster {
 
     public GameMaster(ConsoleUI consola) {
         this.consola = consola;
+        
+        start();
     }
 
     public void start() {
