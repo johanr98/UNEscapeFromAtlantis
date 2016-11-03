@@ -18,7 +18,6 @@ public class ConsoleUI {
     private Scanner lector = new Scanner(System.in);
     private GameMaster gameMaster;
     private Scanner entero = new Scanner(System.in);
-    private Scanner entero2 = new Scanner(System.in);
 
     public ConsoleUI(Board board) {
         gameMaster = new GameMaster(this, board);
@@ -28,7 +27,7 @@ public class ConsoleUI {
     public Player initializePlayer() {
         System.out.println("Ingrese el nombre del nuevo jugador y la posicion (x,y):");
         
-        return new Player(lector.nextLine(), entero.nextInt(), entero2.nextInt());
+        return new Player(lector.nextLine(), entero.nextInt(), entero.nextInt());
     }
 
     public void menu() {
