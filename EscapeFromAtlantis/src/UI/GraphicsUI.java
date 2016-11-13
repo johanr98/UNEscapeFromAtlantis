@@ -184,6 +184,7 @@ public class GraphicsUI extends javax.swing.JFrame {
             OOS.writeObject(gameMaster);
             OOS.close();
             FOS.close();
+            
         } catch (FileNotFoundException ex) {
             System.err.print(ex);
         } catch (IOException ex) {
