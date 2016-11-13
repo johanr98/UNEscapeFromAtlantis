@@ -71,27 +71,27 @@ public class GameMaster implements Serializable {
         }
     }
 
-    void moveSnake() {
+    public void moveSnake() {
+
+    }
+
+    public void moveBoat() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void moveBoat() {
+    public void moveShark() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void moveShark() {
+    public void moveWhale() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void moveWhale() {
+    public void eliminateWhale() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void eliminateWhale() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void eliminateShark() {
+    public void eliminateShark() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
