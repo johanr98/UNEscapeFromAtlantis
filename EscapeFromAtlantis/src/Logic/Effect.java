@@ -23,9 +23,14 @@ public class Effect {
 
     }
 
+    public Effect() {
+
+    }
+
     public void accionarEfecto(Tile tile) {
         switch (tile.getEffect()) {// String1.equals(String2)
             case "volcan":
+
                 graficadora.endScreen();
                 break;
             case "agua":
