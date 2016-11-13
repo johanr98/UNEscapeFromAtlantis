@@ -45,6 +45,14 @@ public class ConsoleUI {
         System.out.println(something);
     }
 
+    public void selectAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void selectTile() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * @param args the command line arguments
      */

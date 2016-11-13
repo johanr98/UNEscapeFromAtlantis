@@ -72,7 +72,8 @@ public class GameMaster implements Serializable {
     }
 
     public void moveSnake() {
-
+        consola.selectAnimal();
+        consola.selectTile();
     }
 
     public void moveBoat() {
