@@ -28,7 +28,7 @@ public class GameMaster implements Serializable {
         mapManager = new MapManager(map);
         start();
     }
-    
+
     //Metodo para Iniciar o finalizar el Juego
     public void start() {
         consola.menu();
@@ -142,6 +142,7 @@ public class GameMaster implements Serializable {
         }
     }
 
+<<<<<<< HEAD
     public void moveSnake() {
         consola.selectAnimal();
         consola.selectTile();
@@ -166,4 +167,67 @@ public class GameMaster implements Serializable {
     public void eliminateShark() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+    public void moveSeaSerpent() {
+        Animal seaSerpent = consola.selectAnimal();
+        if (seaSerpent.getName().equals("Sea Serpent")) {
+            seaSerpent.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja una Serpiente Marina!");
+            moveSeaSerpent();
+        }
+
+    }
+
+    public void moveBoat() {
+        if (consola.selectBoat().getName().equals("Sea Serpent")) {
+            consola.selectAnimal().setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja una Serpiente Marina!");
+            moveSeaSerpent();
+        }
+    }
+
+    public void moveShark() {
+        Animal shark = consola.selectAnimal();
+        if (shark.getName().equals("Shark")) {
+            shark.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja un Tiburón!");
+            moveShark();
+        }
+    }
+
+    public void moveWhale() {
+        Animal whale = consola.selectAnimal();
+        if (whale.getName().equals("Whale")) {
+            whale.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoje una Ballena!");
+            moveWhale();
+        }
+    }
+
+    public void eliminateWhale() {
+        Animal whale = consola.selectAnimal();
+        if (whale.getName().equals("Whale")) {
+            whale = null;
+        } else {
+            consola.printString("Escoje una Ballena!");
+            eliminateWhale();
+        }
+    }
+
+    public void eliminateShark() {
+
+        Animal shark = consola.selectAnimal();
+        if (shark.getName().equals("Shark")) {
+            shark = null;
+        } else {
+            consola.printString("Escoje un Tiburòn!");
+            eliminateShark();
+        }
+    }
+
+>>>>>>> origin/master
 }

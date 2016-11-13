@@ -11,15 +11,33 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public abstract class Animal implements Serializable{
+public abstract class Animal implements Serializable {
 
+    private String name;
     private int position;
     private int movementAlowed;
 
-    public Animal(int position, int movementAlowed) {
+    public Animal(int position, int movementAlowed, String name) {
+        this.name = name;
         this.position = position;
         this.movementAlowed = movementAlowed;
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public void setMovementAlowed(int movementAlowed) {
+        this.movementAlowed = movementAlowed;
     }
 
     public int getPosition() {

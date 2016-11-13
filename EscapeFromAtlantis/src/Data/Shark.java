@@ -11,10 +11,10 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public class Shark extends Animal implements Serializable{
+public class Shark extends Animal implements Serializable {
 
     public Shark(int position) {
-        super(position, 2);
+        super(position, 2, "Shark");
     }
 
     //tiburon no destruye barcos pero si come nadadores

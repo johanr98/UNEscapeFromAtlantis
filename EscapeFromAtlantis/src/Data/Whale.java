@@ -11,10 +11,10 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public class Whale extends Animal implements Serializable{
+public class Whale extends Animal implements Serializable {
 
     public Whale(int position) {
-        super(position,3);
+        super(position, 3, "Whale");
     }
 
     //ballena destruye barcos pero no puede comerse a los nadadores
@@ -22,7 +22,5 @@ public class Whale extends Animal implements Serializable{
     public void doEffect() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
+
 }
