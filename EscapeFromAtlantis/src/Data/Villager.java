@@ -12,18 +12,18 @@ import java.util.Random;
  *
  * @author macas
  */
-public class Villager implements Serializable{
+public class Villager implements Serializable {
 
     private int value;
-    private boolean alive;
+    private boolean inWater;
 
     private int positionX;
     private int positionY;
-    
 
     public Villager(int x, int y) {
         positionX = x;
         positionY = y;
+        inWater = false;
     }
 
     public int getValue() {
@@ -34,12 +34,12 @@ public class Villager implements Serializable{
         this.value = value;
     }
 
-    public boolean isAlive() {
-        return alive;
+    public boolean isInWater() {
+        return inWater;
     }
 
-    public void setAlive(boolean alive) {
-        this.alive = alive;
+    public void setInWater(boolean inWater) {
+        this.inWater = inWater;
     }
 
     public int getPositionX() {

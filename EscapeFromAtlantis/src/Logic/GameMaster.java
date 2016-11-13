@@ -99,10 +99,6 @@ public class GameMaster implements Serializable {
 
     }
 
-    public void moveBoat() {
-
-    }
-
     public void moveShark() {
         Animal shark = consola.selectAnimal();
         if (shark.getName().equals("Shark")) {

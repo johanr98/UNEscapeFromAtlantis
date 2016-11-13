@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public class Board implements Serializable{
+public class Board implements Serializable {
 
     static final int WATERTILEQUANTITY = 133;
     static final int SALVATIONTILEQUANTITY = 12;
@@ -56,42 +56,25 @@ public class Board implements Serializable{
     }
 
     public void printBoard(Player player1, Player player2) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                if (player1.getVillager1().getPositionX() == i && player1.getVillager1().getPositionY() == j) {
-                    System.out.print(1);
 
-                } else if (player2.getVillager1().getPositionX() == i && player2.getVillager1().getPositionY() == j) {
-                    System.out.print(2);
-                } else {
-                    System.out.print(board[i][j]);
-                }
+        box = new Box[13][25];
 
-            }
-            System.out.println("");
-        }
-
-
-        /*
-        MAPA VERDADERO
-         */ //        box = new Box[13][25];
-        //
-        //        //salvacion Esquina izquierda superior
-        //        box[0][2].setT(new FinishTile(1));
-        //        box[1][1].setT(new FinishTile(10));
-        //        box[2][0].setT(new FinishTile(22));
-        //        //salvacion Esquina derecha superior
-        //        box[0][22].setT(new FinishTile(9));
-        //        box[1][23].setT(new FinishTile(19));
-        //        box[2][24].setT(new FinishTile(30));
-        //        //salvacion esquina inferior izquierda
-        //        box[10][0].setT(new FinishTile(112));
-        //        box[11][1].setT(new FinishTile(124));
-        //        box[12][2].setT(new FinishTile(136));
-        //        //salvacion esquina inferior derecha
-        //        box[10][24].setT(new FinishTile(123));
-        //        box[11][23].setT(new FinishTile(135));
-        //        box[12][22].setT(new FinishTile(144));
+        //salvacion Esquina izquierda superior
+        box[0][2].setT(new FinishTile(1));
+        box[1][1].setT(new FinishTile(10));
+        box[2][0].setT(new FinishTile(22));
+        //salvacion Esquina derecha superior
+        box[0][22].setT(new FinishTile(9));
+        box[1][23].setT(new FinishTile(19));
+        box[2][24].setT(new FinishTile(30));
+        //salvacion esquina inferior izquierda
+        box[10][0].setT(new FinishTile(112));
+        box[11][1].setT(new FinishTile(124));
+        box[12][2].setT(new FinishTile(136));
+        //salvacion esquina inferior derecha
+        box[10][24].setT(new FinishTile(123));
+        box[11][23].setT(new FinishTile(135));
+        box[12][22].setT(new FinishTile(144));
     }
 
     public String[][] getBoard() {

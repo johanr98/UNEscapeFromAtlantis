@@ -11,29 +11,33 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public class Player implements Serializable{
+public class Player implements Serializable {
 
     private String name;
-    private Villager villagers1;
+    private Villager[] villagers;
 
     private int x;
     private int y;
 
     public Player(String name, int x, int y) {
+
+        villagers = new Villager[10];
+
         this.name = name;
         this.x = x;
         this.y = y;
 
-        villagers1 = new Villager(x, y);
+        villagers[0].setValue(1);
+        villagers[1].setValue(1);
+        villagers[2].setValue(1);
+        villagers[3].setValue(2);
+        villagers[4].setValue(2);
+        villagers[5].setValue(3);
+        villagers[6].setValue(3);
+        villagers[7].setValue(4);
+        villagers[8].setValue(5);
+        villagers[9].setValue(6);
 
-        villagers1.setValue(1);
-
-        /**
-         * villagers[2].setValue(1); villagers[3].setValue(2);
-         * villagers[4].setValue(2); villagers[5].setValue(3);
-         * villagers[6].setValue(3); villagers[7].setValue(4);
-         * villagers[8].setValue(5); villagers[9].setValue(6);
-         */
     }
 
     public String getName() {
@@ -44,8 +48,8 @@ public class Player implements Serializable{
         this.name = name;
     }
 
-    public Villager getVillager1() {
-        return villagers1;
+    public Villager[] getVillagers() {
+        return villagers;
     }
 
 }

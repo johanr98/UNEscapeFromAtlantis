@@ -42,9 +42,6 @@ public class Effect {
             case "mover serpiente":
                 master.moveSeaSerpent();
                 break;
-            case "mover barco":
-                master.moveBoat();
-                break;
             case "mover tiburon":
                 master.moveShark();
                 break;
