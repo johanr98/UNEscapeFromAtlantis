@@ -106,6 +106,12 @@ public class GraphicsUI extends javax.swing.JFrame {
         });
     }
 
+    // Inicio Metodos de uso en la clase Effect
+    public void pintarEfecto() {
+        
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;

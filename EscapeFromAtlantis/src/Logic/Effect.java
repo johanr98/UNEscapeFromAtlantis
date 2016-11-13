@@ -5,10 +5,22 @@
  */
 package Logic;
 
+import UI.*;
+
 /**
  *
  * @author macas
  */
 public class Effect {
+
+    private GraphicsUI graficadora;
+
+    public Effect(GraphicsUI graficadora) {
+
+        this.graficadora = graficadora;
+
+    }
+    
+    public void 
     
 }
