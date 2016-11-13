@@ -41,7 +41,7 @@ public class Effect {
                 graficadora.drawBoat();
                 break;
             case "mover serpiente":
-                master.moveSnake();
+                master.moveSeaSerpent();
                 break;
             case "mover barco":
                 master.moveBoat();
