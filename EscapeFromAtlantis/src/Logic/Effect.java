@@ -5,8 +5,8 @@
  */
 package Logic;
 
-import Data.Tile;
 import UI.*;
+import Data.*;
 
 /**
  *
@@ -18,9 +18,8 @@ public class Effect {
     private GameMaster master;
 
     public Effect(GraphicsUI graficadora, GameMaster master) {
-        this.master = master;
         this.graficadora = graficadora;
-
+        this.master = master;
     }
 
     public void accionarEfecto(Tile tile) {
@@ -62,4 +61,5 @@ public class Effect {
         }
 
     }
+
 }
