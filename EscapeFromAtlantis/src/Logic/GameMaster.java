@@ -71,28 +71,64 @@ public class GameMaster implements Serializable {
         }
     }
 
-    public void moveSnake() {
-        consola.selectAnimal();
-        consola.selectTile();
+    public void moveSeaSerpent() {
+        Animal seaSerpent = consola.selectAnimal();
+        if (seaSerpent.getName().equals("Sea Serpent")) {
+            seaSerpent.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja una Serpiente Marina!");
+            moveSeaSerpent();
+        }
+
     }
 
     public void moveBoat() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (consola.selectBoat().getName().equals("Sea Serpent")) {
+            consola.selectAnimal().setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja una Serpiente Marina!");
+            moveSeaSerpent();
+        }
     }
 
     public void moveShark() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal shark = consola.selectAnimal();
+        if (shark.getName().equals("Shark")) {
+            shark.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja un Tiburón!");
+            moveShark();
+        }
     }
 
     public void moveWhale() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal whale = consola.selectAnimal();
+        if (whale.getName().equals("Whale")) {
+            whale.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoje una Ballena!");
+            moveWhale();
+        }
     }
 
     public void eliminateWhale() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal whale = consola.selectAnimal();
+        if (whale.getName().equals("Whale")) {
+            whale = null;
+        } else {
+            consola.printString("Escoje una Ballena!");
+            eliminateWhale();
+        }
     }
 
     public void eliminateShark() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        Animal shark = consola.selectAnimal();
+        if (shark.getName().equals("Shark")) {
+            shark = null;
+        } else {
+            consola.printString("Escoje un Tiburòn!");
+            eliminateShark();
+        }
     }
 }

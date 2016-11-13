@@ -11,10 +11,11 @@ import java.io.Serializable;
  *
  * @author macas
  */
-public class SeaSerpent extends Animal implements Serializable{
+public class SeaSerpent extends Animal implements Serializable {
 
     public SeaSerpent(int position) {
-        super(position, 1);
+        super(position, 1, "Sea Serpent");
+
     }
 
     //serpiente marina destruye barcos y se come a los pasajeros

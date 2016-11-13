@@ -45,12 +45,17 @@ public class ConsoleUI {
         System.out.println(something);
     }
 
-    public void selectAnimal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //Metodos de seleccion de elementos del tablero
+    public Animal selectAnimal() {
+
     }
 
-    public void selectTile() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Tile selectTile() {
+
+    }
+
+    public Boat selectBoat() {
+
     }
 
     /**
