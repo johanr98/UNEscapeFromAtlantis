@@ -19,6 +19,7 @@ public class Villager implements Serializable{
 
     private int positionX;
     private int positionY;
+    
 
     public Villager(int x, int y) {
         positionX = x;
