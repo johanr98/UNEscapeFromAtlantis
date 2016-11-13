@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class Player {
+public class Player implements Serializable{
 
     private String name;
     private Villager villagers1;

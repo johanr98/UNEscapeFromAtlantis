@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class Boat {
+public class Boat implements Serializable{
 
     private final int MAXPLAYERQUANTITY = 3;
     private int quantity;

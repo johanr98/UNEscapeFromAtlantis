@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author johans
  */
-public class FinishTile extends Tile {
+public class FinishTile extends Tile implements Serializable{
 
     private String inside;
 

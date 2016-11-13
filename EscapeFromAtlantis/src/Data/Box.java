@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author johans
  */
-public class Box<T> {
+public class Box<T> implements Serializable{
 
     private T t;
 

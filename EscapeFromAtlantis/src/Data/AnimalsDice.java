@@ -5,13 +5,14 @@
  */
 package Data;
 
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  *
  * @author macas
  */
-public class AnimalsDice {
+public class AnimalsDice implements Serializable{
 
     private String name;
     private String face1;

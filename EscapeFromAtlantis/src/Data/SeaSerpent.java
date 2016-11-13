@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class SeaSerpent extends Animal {
+public class SeaSerpent extends Animal implements Serializable{
 
     public SeaSerpent(int position) {
         super(position, 1);

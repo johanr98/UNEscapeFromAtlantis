@@ -7,12 +7,13 @@ package Logic;
 
 import UI.*;
 import Data.*;
+import java.io.Serializable;
 
 /**
  *
  * @author johans
  */
-public class GameMaster {
+public class GameMaster implements Serializable {
 
     private ConsoleUI consola;
     private Board map;

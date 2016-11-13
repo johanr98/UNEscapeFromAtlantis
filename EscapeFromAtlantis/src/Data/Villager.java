@@ -5,13 +5,14 @@
  */
 package Data;
 
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  *
  * @author macas
  */
-public class Villager {
+public class Villager implements Serializable{
 
     private int value;
     private boolean alive;

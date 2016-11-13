@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class Board {
+public class Board implements Serializable{
 
     static final int WATERTILEQUANTITY = 133;
     static final int SALVATIONTILEQUANTITY = 12;
