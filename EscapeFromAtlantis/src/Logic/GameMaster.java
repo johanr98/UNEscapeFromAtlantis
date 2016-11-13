@@ -46,18 +46,17 @@ public class GameMaster implements Serializable {
             }
         }
     }// fin start
-    
-    public void inicializar (){
+
+    public void inicializar() {
         ArrayList<Player> players = new ArrayList<Player>();
         for (int i = 0; i < 4; i++) {
-            consola.printString("Datos del jugador "+i);
+            consola.printString("Datos del jugador " + i);
             players.add(i, consola.initializePlayer());
-        } 
-        for (Player i : players){
+        }
+        for (Player i : players) {
             System.out.println(i);
         }
     }
-    
 
     public void play() {
 
@@ -84,30 +83,9 @@ public class GameMaster implements Serializable {
         }
     }
 
-
     public void moveSnake() {
         consola.selectAnimal();
         consola.selectTile();
-    }
-
-    public void moveBoat() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void moveShark() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void moveWhale() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void eliminateWhale() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void eliminateShark() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void moveSeaSerpent() {
@@ -122,12 +100,7 @@ public class GameMaster implements Serializable {
     }
 
     public void moveBoat() {
-        if (consola.selectBoat().getName().equals("Sea Serpent")) {
-            consola.selectAnimal().setPosition(consola.selectTile().getPosition());
-        } else {
-            consola.printString("Escoja una Serpiente Marina!");
-            moveSeaSerpent();
-        }
+
     }
 
     public void moveShark() {
@@ -170,6 +143,5 @@ public class GameMaster implements Serializable {
             eliminateShark();
         }
     }
-
 
 }
