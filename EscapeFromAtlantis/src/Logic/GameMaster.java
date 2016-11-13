@@ -14,39 +14,36 @@ import Data.*;
  */
 public class GameMaster {
 
+    // Atributos
     private ConsoleUI consola;
     private Board map;
     private MapManager mapManager;
 
-    public GameMaster(ConsoleUI consola, Board board) {
-        this.consola = consola;
-
-        map = board;
+    //Constructor GameMaster
+    public GameMaster(ConsoleUI consola, Board map) {
+        this.consola = consola;//
+        this.map = map;
         mapManager = new MapManager(map);
-
         start();
     }
-
+    
+    //Metodo para Iniciar o finalizar el Juego
     public void start() {
         consola.menu();
         outerloop:
         while (true) {
-
             switch (consola.returnInt()) {
-
                 case 1:
                     play();
                     break outerloop;
                 case 0:
                     System.exit(0);
-                    break;
                 default:
                     consola.printString("Ingresa de nuevo el valor");
                     break;
-
             }
         }
-    }
+    }// fin start
 
     public void play() {
 
@@ -55,7 +52,6 @@ public class GameMaster {
         consola.printString("Datos del jugador 2");
         Player player2 = consola.initializePlayer();
         consola.printString("");
-
         map.printBoard(player1, player2);
 
         consola.printString("");
@@ -112,7 +108,10 @@ public class GameMaster {
     }
 
     /**
-     * Agrega las fichas del jugador
+     * Determina el final del juego
+     *
+     * @param villager - revisa que el cosito este es una casilla de salvación
+     * @return retorna un entero, que sale del loop del juego
      */
     public int endGame(Villager villager) {
         if ((villager.getPositionX() == 0 && villager.getPositionY() == 0)

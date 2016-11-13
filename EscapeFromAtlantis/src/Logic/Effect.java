@@ -20,7 +20,5 @@ public class Effect {
         this.graficadora = graficadora;
 
     }
-    
-    public void 
-    
+     
 }
