@@ -5,18 +5,18 @@
  */
 package UI;
 
-
 /**
  *
  * @author johans
  */
 public class GraphicsUI extends javax.swing.JFrame {
-    
+
     /**
      * Creates new form GraphicsUI
      */
     public GraphicsUI() {
         initComponents();
+
     }
 
     /**
@@ -44,21 +44,23 @@ public class GraphicsUI extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(1510, 1510, 1510)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 577, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(210, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,14 +109,47 @@ public class GraphicsUI extends javax.swing.JFrame {
     }
 
     // Inicio Metodos de uso en la clase Effect
-    public void pintarEfecto() {
-        
+    /**
+     * Dibuja el efecto de la tile removida
+     */
+    public void drawEffect() {
+
     }
 
+    /**
+     * Dibuja una ballena en cualquier posicion admitible del mapa
+     */
+    public void drawWhale() {
+
+    }
+
+    /**
+     * Dibuja un tiburon en cualquier posición admitible del mapa
+     */
+    public void drawShark() {
+
+    }
+
+    /**
+     * Dibuja un bote en x casilla de agua
+     */
+    public void drawBoat() {
+
+    }
+
+    /**
+     * Es el fin del juego, muestra la puntuación obtenida de cada jugador y el
+     * ganador
+     */
+    public void endScreen() {
+
+    }
+// Fin metodos de la clase Effect
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
+
 }
