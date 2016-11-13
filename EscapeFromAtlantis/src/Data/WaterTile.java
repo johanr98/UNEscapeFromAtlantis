@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class WaterTile extends Tile {
+public class WaterTile extends Tile implements Serializable{
     
     private String inside;
 

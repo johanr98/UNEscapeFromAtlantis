@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public abstract class Animal {
+public abstract class Animal implements Serializable{
 
     private int position;
     private int movementAlowed;

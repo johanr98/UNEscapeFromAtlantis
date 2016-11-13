@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public class MountainTile extends Tile {
+public class MountainTile extends Tile implements Serializable{
 
     private String inside;
 

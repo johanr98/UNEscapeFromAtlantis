@@ -5,11 +5,13 @@
  */
 package Data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author macas
  */
-public abstract class Tile {
+public abstract class Tile implements Serializable{
 
     private boolean inBoard;
     private final int MAXPLAYERQUANTITY = 3;

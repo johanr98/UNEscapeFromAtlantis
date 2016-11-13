@@ -26,7 +26,7 @@ public class ConsoleUI {
 
     public Player initializePlayer() {
         System.out.println("Ingrese el nombre del nuevo jugador y la posicion (x,y):");
-        
+
         return new Player(lector.nextLine(), entero.nextInt(), entero.nextInt());
     }
 
@@ -45,20 +45,15 @@ public class ConsoleUI {
         System.out.println(something);
     }
 
+    public void selectAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void selectTile() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-
-        WaterTile test = new WaterTile(5, true);
-        ForestTile test2 = new ForestTile(5, true, "None");
-        MountainTile test3 = new MountainTile(5, true, "None");
-        FinishTile test4 = new FinishTile(5);
-        SandTile test5 = new SandTile(5, true, "None");
-        Board test6 = new Board(test3, test2, test5, test, test4);
-        ConsoleUI consola = new ConsoleUI(test6);
-        
-
-    }
-
 }
