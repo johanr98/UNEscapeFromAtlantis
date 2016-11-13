@@ -5,11 +5,14 @@
  */
 package UI;
 
+import Logic.GameMaster;
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,11 +24,13 @@ import java.util.logging.Logger;
 public class GraphicsUI extends javax.swing.JFrame {
 
     String separador = System.getProperty("file.separator");
+    private GameMaster gameMaster;
     /**
      * Creates new form GraphicsUI
      */
     public GraphicsUI() {
         initComponents();
+        this.gameMaster = new GameMaster(this, new Board());
     }
 
     /**
@@ -106,6 +111,11 @@ public class GraphicsUI extends javax.swing.JFrame {
         });
 
         jButton3.setText("Cargar juego");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -169,10 +179,11 @@ public class GraphicsUI extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
             // TODO add your handling code here:
-            FileOutputStream FOS = new FileOutputStream(new File("src/saves/partidaGuardada.unsfa"));
+            FileOutputStream FOS = new FileOutputStream("src/saves/partidaGuardada.unsfa");
             ObjectOutputStream OOS = new ObjectOutputStream(FOS);
             OOS.writeObject(gameMaster);
             OOS.close();
+            FOS.close();
         } catch (FileNotFoundException ex) {
             System.err.print(ex);
         } catch (IOException ex) {
@@ -180,6 +191,23 @@ public class GraphicsUI extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        try {
+            // TODO add your handling code here:
+            FileInputStream FIS = new FileInputStream("src/saves/partidaGuardada.unsfa");
+            ObjectInputStream OIS = new ObjectInputStream(FIS);
+            gameMaster = (GameMaster) OIS.readObject();
+            FIS.close();
+            OIS.close();
+        } catch (FileNotFoundException ex) {
+            System.err.print(ex);
+        } catch (IOException ex) {
+            System.err.print(ex);
+        } catch (ClassNotFoundException ex) {
+            System.err.print(ex);
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
