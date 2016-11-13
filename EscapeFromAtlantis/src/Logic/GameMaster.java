@@ -7,12 +7,14 @@ package Logic;
 
 import UI.*;
 import Data.*;
+import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  *
  * @author johans
  */
-public class GameMaster {
+public class GameMaster implements Serializable {
 
     // Atributos
     private ConsoleUI consola;
@@ -44,9 +46,24 @@ public class GameMaster {
             }
         }
     }// fin start
+    
+    public void inicializar (){
+        ArrayList<Player> players = new ArrayList<Player>();
+        for (int i = 0; i < 4; i++) {
+            consola.printString("Datos del jugador "+i);
+            players.add(i, consola.initializePlayer());
+        } 
+        for (Player i : players){
+            System.out.println(i);
+        }
+    }
+    
 
     public void play() {
 
+        
+        
+        
         consola.printString("Datos del jugador 1");
         Player player1 = consola.initializePlayer();
         consola.printString("Datos del jugador 2");
@@ -101,6 +118,7 @@ public class GameMaster {
             w = endGame(player2.getVillager1());
         }
 
+
     }
 
     public void moveVillagers(Villager villager, int x, int y) {
@@ -122,5 +140,30 @@ public class GameMaster {
         } else {
             return 0;
         }
+    }
+
+    public void moveSnake() {
+        consola.selectAnimal();
+        consola.selectTile();
+    }
+
+    public void moveBoat() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void moveShark() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void moveWhale() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void eliminateWhale() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void eliminateShark() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
