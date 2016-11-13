@@ -24,7 +24,7 @@ public class Effect {
     }
 
     public void accionarEfecto(Tile tile) {
-        switch (tile.getEffect()) {
+        switch (tile.getEffect()) {// String1.equals(String2)
             case "volcan":
                 graficadora.endScreen();
                 break;
