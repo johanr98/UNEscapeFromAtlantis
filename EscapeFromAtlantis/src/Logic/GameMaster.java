@@ -20,6 +20,7 @@ public class GameMaster implements Serializable {
     private ConsoleUI consola;
     private Board map;
     private MapManager mapManager;
+    private static final int numPlayers = 4;
 
     //Constructor GameMaster
     public GameMaster(ConsoleUI consola, Board map) {
@@ -51,16 +52,15 @@ public class GameMaster implements Serializable {
         }
     }// fin start
 
-    public void inicializar() {
-        ArrayList<Player> players = new ArrayList<Player>();
-        for (int i = 0; i < 4; i++) {
-            consola.printString("Datos del jugador " + i);
-            players.add(i, consola.initializePlayer());
-        }
-        for (Player i : players) {
-            System.out.println(i);
+    public void inicializarJugador() {
+        Player[] players = new Player[numPlayers];
+        for (int i = 0; i < numPlayers; i++) {
+            consola.printString("Ingrese los datos del jugador " + i);
+            players[i] = consola.initializePlayer();
         }
     }
+    
+    
 
     public void play() {
 
@@ -100,7 +100,6 @@ public class GameMaster implements Serializable {
             consola.printString("Escoja una Serpiente Marina!");
             moveSeaSerpent();
         }
-
     }
 
     public void moveShark() {

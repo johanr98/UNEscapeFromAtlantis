@@ -15,14 +15,12 @@ public class Player implements Serializable {
 
     private String name;
     private Villager[] villagers;
-
     private int x;
     private int y;
 
     public Player(String name, int x, int y) {
 
         villagers = new Villager[10];
-
         this.name = name;
         this.x = x;
         this.y = y;
