@@ -15,13 +15,13 @@ import UI.*;
 public class MapManager {
 
     private Movement movement;
-    private Board map;
+    private GraphicsUI map;
 
     public Tile changeTile(Tile tile) {
         return new WaterTile(tile.getPosition(), true);
     }
 
-    public MapManager(Board map) {
+    public MapManager(GraphicsUI map) {
         this.map = map;
         movement = new Movement();
 

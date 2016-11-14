@@ -17,16 +17,14 @@ import java.util.ArrayList;
 public class GameMaster implements Serializable {
 
     // Atributos
-    private ConsoleUI consola;
-    private Board map;
+    private GraphicsUI consola;
     private MapManager mapManager;
     private static final int numPlayers = 4;
 
     //Constructor GameMaster
-    public GameMaster(ConsoleUI consola, Board map) {
+    public GameMaster(GraphicsUI consola) {
         this.consola = consola;//
-        this.map = map;
-        mapManager = new MapManager(map);
+        mapManager = new MapManager(consola);
         start();
     }
 
@@ -59,8 +57,6 @@ public class GameMaster implements Serializable {
             players[i] = consola.initializePlayer();
         }
     }
-    
-    
 
     public void play() {
 

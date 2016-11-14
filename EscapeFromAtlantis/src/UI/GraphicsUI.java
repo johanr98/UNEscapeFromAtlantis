@@ -5,6 +5,10 @@
  */
 package UI;
 
+import Data.Animal;
+import Data.Boat;
+import Data.Player;
+import Data.Tile;
 import Logic.GameMaster;
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
@@ -35,7 +39,32 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
      */
     public GraphicsUI() {
         initComponents();
-        //this.gameMaster = new GameMaster(this, new Board());
+        this.gameMaster = new GameMaster(this);
+    }
+
+    public void initializePlayer() {
+
+    }
+
+    public void menu() {
+        
+    }
+
+    public void printString(String something) {
+        System.out.println(something);
+    }
+
+    //Metodos de seleccion de elementos del tablero
+    public Animal selectAnimal() {
+
+    }
+
+    public Tile selectTile() {
+
+    }
+
+    public Boat selectBoat() {
+
     }
 
     private void initComponentsMountain() {
@@ -1124,7 +1153,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
             java.util.logging.Logger.getLogger(GraphicsUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        GraphicsUI x = new GraphicsUI();
     }
 
     // Inicio Metodos de uso en la clase Effect

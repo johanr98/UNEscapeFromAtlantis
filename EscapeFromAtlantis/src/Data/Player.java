@@ -18,8 +18,10 @@ public class Player implements Serializable {
 
     public Player(String name) {
 
-        villagers = new Villager[10];
         this.name = name;
+
+        villagers = new Villager[10];
+
         villagers[0].setValue(1);
         villagers[1].setValue(1);
         villagers[2].setValue(1);
