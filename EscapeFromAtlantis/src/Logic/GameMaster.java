@@ -20,6 +20,7 @@ public class GameMaster implements Serializable {
     private GraphicsUI consola;
     private MapManager mapManager;
     private ArrayList<Player> players;
+    private Movement movement;
 
     private static final int MAX_PLAYERS = 4;
     private static final int MIN_PLAYERS = 2;
@@ -41,25 +42,12 @@ public class GameMaster implements Serializable {
 
     }
 
-    public int endGame(Villager villager) {
-        if ((villager.getPositionX() == 0 && villager.getPositionY() == 0)
-                || ((villager.getPositionX() == 4 && villager.getPositionY() == 0))) {
-            System.out.println("Fin del juego.");
-            System.out.println();
-            return 1;
-        } else {
-            return 0;
-        }
+    public void endGame() {
+
     }
 
     public void eliminateWhale() {
-        //Animal whale = consola.selectAnimal();
-        if (whale.getName().equals("Whale")) {
-            whale = null;
-        } else {
-            consola.printString("Escoje una Ballena!");
-            eliminateWhale();
-        }
+
     }
 
     public void eliminateShark() {
@@ -73,6 +61,18 @@ public class GameMaster implements Serializable {
             consola.printString("Escoje un Tiburòn!");
             eliminateShark();
         }
+    }
+
+    public void moveSeaSerpent() {
+        movement.moveSeaSerpent();
+    }
+
+    public void moveShark() {
+        movement.moveShark();
+    }
+
+    public void moveWhale() {
+        movement.moveWhale();
     }
 
 }

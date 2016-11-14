@@ -20,17 +20,19 @@ import java.io.ObjectOutputStream;
  * @author johanr98 jsromerod@unal.edu.co
  */
 public class Menu extends javax.swing.JFrame {
-
+    
     private GraphicsUI pantallaDeJuego;
     private GameMaster gameMaster;
+    private NuevaPartida nuevaPartida;
 
     /**
      * Creates new form Menu
      */
-    public Menu() {
+    public Menu(GraphicsUI pantallaDeJuego) {
         initComponents();
-        this.pantallaDeJuego = new GraphicsUI();
+        this.pantallaDeJuego = pantallaDeJuego;
         this.gameMaster = pantallaDeJuego.getGameMaster();
+        this.nuevaPartida = new NuevaPartida(this);
     }
 
     /**
@@ -66,6 +68,11 @@ public class Menu extends javax.swing.JFrame {
         });
 
         jButton4.setText("Iniciar nuevo juego");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Mejores puntajes");
 
@@ -179,7 +186,7 @@ public class Menu extends javax.swing.JFrame {
             OOS.writeObject(gameMaster);
             OOS.close();
             FOS.close();
-
+            
         } catch (FileNotFoundException ex) {
             System.err.print(ex);
         } catch (IOException ex) {
@@ -196,6 +203,11 @@ public class Menu extends javax.swing.JFrame {
             System.out.println(ex);;
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        nuevaPartida.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
