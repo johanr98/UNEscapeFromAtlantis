@@ -476,7 +476,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     }
 
     private void mouseClick33(MouseEvent me) {
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick26(MouseEvent me) {
