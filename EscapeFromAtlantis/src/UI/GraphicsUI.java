@@ -47,7 +47,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     }
 
     public void menu() {
-        
+
     }
 
     public void printString(String something) {
@@ -55,15 +55,15 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     }
 
     //Metodos de seleccion de elementos del tablero
-    public Animal selectAnimal() {
+    public void selectAnimal() {
 
     }
 
-    public Tile selectTile() {
+    public void selectTile() {
 
     }
 
-    public Boat selectBoat() {
+    public void selectBoat() {
 
     }
 

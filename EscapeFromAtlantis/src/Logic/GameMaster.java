@@ -34,21 +34,8 @@ public class GameMaster implements Serializable {
 
     //Metodo para Iniciar o finalizar el Juego
     public void start() {
-        consola.menu();
-        outerloop:
-        while (true) {
-            switch (consola.returnInt()) {
-                case 1:
-                    play();
-                    break outerloop;
-                case 0:
-                    System.exit(0);
-                default:
-                    consola.printString("Ingresa de nuevo el valor");
-                    break;
-            }
-        }
-    }// fin start
+
+    }
 
     public void inicializarJugador(int a) {
         Player[] players = new Player[a];
@@ -81,11 +68,6 @@ public class GameMaster implements Serializable {
         } else {
             return 0;
         }
-    }
-
-    public void moveSnake() {
-        consola.selectAnimal();
-        consola.selectTile();
     }
 
     public void moveSeaSerpent() {
