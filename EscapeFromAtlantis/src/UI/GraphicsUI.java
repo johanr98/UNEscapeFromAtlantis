@@ -296,8 +296,6 @@ public class GraphicsUI extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        GameMaster m = new GameMaster();
-        m.eliminateShark();
     }
 
     // Inicio Metodos de uso en la clase Effect
