@@ -236,6 +236,18 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel87 = new javax.swing.JLabel();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -429,7 +441,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 31, 50, -1));
 
         jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
-        jPanel2.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 112, 50, -1));
+        jPanel2.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(744, 196, 50, -1));
 
         jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 73, 50, -1));
@@ -514,6 +526,42 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
         jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
         jPanel2.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(674, 321, 50, -1));
+
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 112, 50, -1));
+
+        jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(647, 112, 50, -1));
+
+        jLabel92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(695, 113, 50, -1));
+
+        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(744, 113, 50, -1));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 157, 50, -1));
+
+        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 156, 50, -1));
+
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 156, 50, -1));
+
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(672, 154, 50, -1));
+
+        jLabel98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(719, 155, 50, -1));
+
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 199, 50, -1));
+
+        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 198, 50, -1));
+
+        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(696, 196, 50, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mapa de fondo.png"))); // NOI18N
         jLabel1.setLabelFor(jPanel2);
@@ -698,6 +746,8 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -785,6 +835,16 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
