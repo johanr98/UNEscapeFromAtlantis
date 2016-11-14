@@ -19,30 +19,22 @@ public class GameMaster implements Serializable {
     // Atributos
     private GraphicsUI consola;
     private MapManager mapManager;
-    private static final int numPlayers = 4;
+    private ArrayList<Player> players;
+
+    private static final int MAX_PLAYERS = 4;
+    private static final int MIN_PLAYERS = 2;
 
     //Constructor GameMaster
     public GameMaster(GraphicsUI consola) {
+
+        players = new ArrayList<Player>();
+
         this.consola = consola;//
         mapManager = new MapManager(consola);
-        start();
     }
 
-    public GameMaster() {
-
-    }
-
-    //Metodo para Iniciar o finalizar el Juego
-    public void start() {
-
-    }
-
-    public void inicializarJugador(int a) {
-        Player[] players = new Player[a];
-        for (int i = 0; i < a; i++) {
-            consola.printString("Ingrese los datos del jugador " + i);
-            players[i] = consola.initializePlayer();
-        }
+    public void initializePlayer(String name) {
+        players.add(new Player(name));
     }
 
     public void play() {
@@ -50,7 +42,7 @@ public class GameMaster implements Serializable {
     }
 
     public void moveVillagers(Villager villager, int x, int y) {
-        villager.setTilePosition(x, y);
+        Movement.moveVillage(villager, x, y);
     }
 
     /**

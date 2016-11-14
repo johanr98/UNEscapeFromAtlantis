@@ -43,7 +43,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     }
 
     public void initializePlayer() {
-
+        gameMaster.initializePlayer();
     }
 
     public void menu() {

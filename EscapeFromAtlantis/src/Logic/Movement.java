@@ -32,10 +32,10 @@ public class Movement {
         this.numberOfTiles = numberOfTiles;
     }
 
-    public void moveVillage(Villager village, int posX, int posY) {
+    public static void moveVillage(Villager village, int posX, int posY) {
         int x = Math.abs(posX - village.getPositionX());
         int y = Math.abs(posY - village.getPositionY());
-        if (x > 1 || y > 1 ||((x==0&&y==0))) {
+        if (x > 1 || y > 1 || ((x == 0 && y == 0))) {
             System.out.println("Ingrese una opción valida!!"
                     + " pierde turno");
 
