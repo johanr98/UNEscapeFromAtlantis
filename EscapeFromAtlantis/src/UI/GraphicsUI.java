@@ -55,6 +55,11 @@ public class GraphicsUI extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -72,19 +77,15 @@ public class GraphicsUI extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 275, 50, 60));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 197, 50, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 50, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 322, 50, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jLabel6.setText("jLabel5");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 321, 50, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
@@ -92,11 +93,9 @@ public class GraphicsUI extends javax.swing.JFrame {
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 238, 50, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jLabel8.setText("jLabel5");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 280, 50, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jLabel9.setText("jLabel2");
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 280, 50, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
@@ -104,16 +103,28 @@ public class GraphicsUI extends javax.swing.JFrame {
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(529, 239, 50, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
-        jLabel11.setText("jLabel2");
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 238, 50, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
-        jLabel12.setText("jLabel2");
         jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 197, 50, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
-        jLabel13.setText("jLabel2");
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 196, 50, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 197, 50, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 239, 50, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 281, 50, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 364, 50, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 322, 50, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mapa de fondo.png"))); // NOI18N
         jLabel1.setLabelFor(jPanel2);
@@ -307,6 +318,11 @@ public class GraphicsUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
