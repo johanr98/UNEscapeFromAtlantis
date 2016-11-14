@@ -27,7 +27,7 @@ public class GameMaster implements Serializable {
         mapManager = new MapManager(consola);
         start();
     }
-
+   
     public GameMaster() {
 
     }
