@@ -80,9 +80,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     private void initComponentsMountain() {
 
-        jLabel8.addMouseListener(new MouseAdapter() {
+        jLabel169.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick8(me);
+                mouseClick169(me);
             }
         });
 
@@ -92,87 +92,87 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
             }
         });
 
-        jLabel10.addMouseListener(new MouseAdapter() {
+        jLabel170.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick10(me);
+                mouseClick170(me);
             }
         });
 
-        jLabel4.addMouseListener(new MouseAdapter() {
+        jLabel171.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick4(me);
+                mouseClick171(me);
             }
         });
 
-        jLabel6.addMouseListener(new MouseAdapter() {
+        jLabel168.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick6(me);
+                mouseClick168(me);
             }
         });
 
-        jLabel5.addMouseListener(new MouseAdapter() {
+        jLabel163.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick5(me);
+                mouseClick163(me);
             }
         });
 
-        jLabel14.addMouseListener(new MouseAdapter() {
+        jLabel172.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick14(me);
+                mouseClick172(me);
             }
         });
 
-        jLabel12.addMouseListener(new MouseAdapter() {
+        jLabel173.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick12(me);
+                mouseClick173(me);
             }
         });
 
-        jLabel13.addMouseListener(new MouseAdapter() {
+        jLabel162.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick13(me);
+                mouseClick162(me);
             }
         });
 
-        jLabel11.addMouseListener(new MouseAdapter() {
+        jLabel164.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick11(me);
+                mouseClick164(me);
             }
         });
 
-        jLabel22.addMouseListener(new MouseAdapter() {
+        jLabel160.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick22(me);
+                mouseClick160(me);
             }
         });
 
-        jLabel21.addMouseListener(new MouseAdapter() {
+        jLabel161.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick21(me);
+                mouseClick161(me);
             }
         });
 
-        jLabel20.addMouseListener(new MouseAdapter() {
+        jLabel167.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick20(me);
+                mouseClick167(me);
             }
         });
 
-        jLabel19.addMouseListener(new MouseAdapter() {
+        jLabel117.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick19(me);
+                mouseClick117(me);
             }
         });
 
-        jLabel18.addMouseListener(new MouseAdapter() {
+        jLabel165.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick18(me);
+                mouseClick165(me);
             }
         });
 
-        jLabel15.addMouseListener(new MouseAdapter() {
+        jLabel166.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick15(me);
+                mouseClick166(me);
             }
         });
 
@@ -377,69 +377,69 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
-    private void mouseClick8(MouseEvent me) {
-        gameMaster.eliminateShark();
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick169(MouseEvent me) {
+
+        jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick7(MouseEvent me) {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick10(MouseEvent me) {
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick170(MouseEvent me) {
+        jLabel170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick4(MouseEvent me) {
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick171(MouseEvent me) {
+        jLabel171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick6(MouseEvent me) {
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick168(MouseEvent me) {
+        jLabel168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick5(MouseEvent me) {
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick163(MouseEvent me) {
+        jLabel163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick14(MouseEvent me) {
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick172(MouseEvent me) {
+        jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick12(MouseEvent me) {
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick173(MouseEvent me) {
+        jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick13(MouseEvent me) {
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick162(MouseEvent me) {
+        jLabel162.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick11(MouseEvent me) {
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick164(MouseEvent me) {
+        jLabel164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick22(MouseEvent me) {
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick160(MouseEvent me) {
+        jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick21(MouseEvent me) {
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick161(MouseEvent me) {
+        jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick20(MouseEvent me) {
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick167(MouseEvent me) {
+        jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick19(MouseEvent me) {
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick117(MouseEvent me) {
+        jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick18(MouseEvent me) {
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick165(MouseEvent me) {
+        jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
-    private void mouseClick15(MouseEvent me) {
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick166(MouseEvent me) {
+        jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     // Metodos Tiles de bosque
