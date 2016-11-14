@@ -29,6 +29,10 @@ public class GameMaster implements Serializable {
         start();
     }
 
+    public GameMaster() {
+
+    }
+
     //Metodo para Iniciar o finalizar el Juego
     public void start() {
         consola.menu();
@@ -131,9 +135,11 @@ public class GameMaster implements Serializable {
 
     public void eliminateShark() {
 
-        Animal shark = consola.selectAnimal();
+        Animal shark = new Shark(1);
+        Animal x = shark;
         if (shark.getName().equals("Shark")) {
             shark = null;
+            System.out.println(x.getName());
         } else {
             consola.printString("Escoje un Tiburòn!");
             eliminateShark();

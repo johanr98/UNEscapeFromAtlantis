@@ -25,12 +25,13 @@ public class GraphicsUI extends javax.swing.JFrame {
 
     String separador = System.getProperty("file.separator");
     private GameMaster gameMaster;
+
     /**
      * Creates new form GraphicsUI
      */
     public GraphicsUI() {
         initComponents();
-        this.gameMaster = new GameMaster(this, new Board());
+        //this.gameMaster = new GameMaster(this, new Board());
     }
 
     /**
@@ -229,7 +230,7 @@ public class GraphicsUI extends javax.swing.JFrame {
         try {
             File path = new File("src/rules/reglas.pdf");
             Desktop.getDesktop().open(path);
-        } catch (Exception  ex) {
+        } catch (Exception ex) {
             System.out.println(ex);;
         }
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -242,13 +243,13 @@ public class GraphicsUI extends javax.swing.JFrame {
             OOS.writeObject(gameMaster);
             OOS.close();
             FOS.close();
-            
+
         } catch (FileNotFoundException ex) {
             System.err.print(ex);
         } catch (IOException ex) {
             System.err.print(ex);
         }
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -295,12 +296,8 @@ public class GraphicsUI extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GraphicsUI().setVisible(true);
-            }
-        });
+        GameMaster m = new GameMaster();
+        m.eliminateShark();
     }
 
     // Inicio Metodos de uso en la clase Effect
