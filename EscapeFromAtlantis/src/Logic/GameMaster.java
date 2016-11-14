@@ -42,9 +42,7 @@ public class GameMaster implements Serializable {
     }
 
 
-    public void moveVillagers(Villager villager, int x, int y) {
-        Movement.moveVillage(villager, x, y);
-    }
+   
 
 
     public int endGame(Villager villager) {
