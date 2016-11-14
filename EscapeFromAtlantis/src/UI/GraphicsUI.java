@@ -138,6 +138,399 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    private void initComponentsForest() {
+        jLabel41.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick41(me);
+            }
+        });
+
+        jLabel38.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick38(me);
+            }
+        });
+
+        jLabel17.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick17(me);
+            }
+        });
+
+        jLabel24.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick24(me);
+            }
+        });
+
+        jLabel36.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick36(me);
+            }
+        });
+
+        jLabel40.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick40(me);
+            }
+        });
+
+        jLabel35.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick35(me);
+            }
+        });
+
+        jLabel39.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick39(me);
+            }
+        });
+
+        jLabel33.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick33(me);
+            }
+        });
+
+        jLabel26.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick26(me);
+            }
+        });
+
+        jLabel32.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick32(me);
+            }
+        });
+
+        jLabel27.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick27(me);
+            }
+        });
+
+        jLabel31.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick31(me);
+            }
+        });
+
+        jLabel30.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick30(me);
+            }
+        });
+
+        jLabel29.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick29(me);
+            }
+        });
+
+        jLabel28.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick28(me);
+            }
+        });
+
+    }
+
+    private void initComponentsSand() {
+
+        jLabel34.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick34(me);
+            }
+        });
+
+        jLabel79.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick79(me);
+            }
+        });
+
+        jLabel85.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick85(me);
+            }
+        });
+
+        jLabel80.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick80(me);
+            }
+        });
+
+        jLabel86.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick86(me);
+            }
+        });
+
+        jLabel81.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick81(me);
+            }
+        });
+
+        jLabel78.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick78(me);
+            }
+        });
+
+        jLabel16.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick16(me);
+            }
+        });
+
+        jLabel23.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick23(me);
+            }
+        });
+
+        jLabel84.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick84(me);
+            }
+        });
+
+        jLabel88.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick88(me);
+            }
+        });
+
+        jLabel82.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick82(me);
+            }
+        });
+
+        jLabel89.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick89(me);
+            }
+        });
+
+        jLabel83.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick83(me);
+            }
+        });
+
+        jLabel25.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick25(me);
+            }
+        });
+
+        jLabel87.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick87(me);
+            }
+        });
+
+    }
+
+    private void mouseClick8(MouseEvent me) {
+
+    }
+
+    private void mouseClick7(MouseEvent me) {
+
+    }
+
+    private void mouseClick10(MouseEvent me) {
+
+    }
+
+    private void mouseClick4(MouseEvent me) {
+
+    }
+
+    private void mouseClick6(MouseEvent me) {
+
+    }
+
+    private void mouseClick5(MouseEvent me) {
+
+    }
+
+    private void mouseClick14(MouseEvent me) {
+
+    }
+
+    private void mouseClick12(MouseEvent me) {
+
+    }
+
+    private void mouseClick13(MouseEvent me) {
+
+    }
+
+    private void mouseClick11(MouseEvent me) {
+
+    }
+
+    private void mouseClick22(MouseEvent me) {
+
+    }
+
+    private void mouseClick21(MouseEvent me) {
+
+    }
+
+    private void mouseClick20(MouseEvent me) {
+
+    }
+
+    private void mouseClick19(MouseEvent me) {
+
+    }
+
+    private void mouseClick18(MouseEvent me) {
+
+    }
+
+    private void mouseClick15(MouseEvent me) {
+
+    }
+
+    // Metodos Tiles de bosque
+    private void mouseClick41(MouseEvent me) {
+
+    }
+
+    private void mouseClick38(MouseEvent me) {
+
+    }
+
+    private void mouseClick17(MouseEvent me) {
+
+    }
+
+    private void mouseClick24(MouseEvent me) {
+
+    }
+
+    private void mouseClick36(MouseEvent me) {
+
+    }
+
+    private void mouseClick40(MouseEvent me) {
+
+    }
+
+    private void mouseClick35(MouseEvent me) {
+
+    }
+
+    private void mouseClick39(MouseEvent me) {
+
+    }
+
+    private void mouseClick33(MouseEvent me) {
+
+    }
+
+    private void mouseClick26(MouseEvent me) {
+
+    }
+
+    private void mouseClick32(MouseEvent me) {
+
+    }
+
+    private void mouseClick27(MouseEvent me) {
+
+    }
+
+    private void mouseClick31(MouseEvent me) {
+
+    }
+
+    private void mouseClick30(MouseEvent me) {
+
+    }
+
+    private void mouseClick29(MouseEvent me) {
+
+    }
+
+    private void mouseClick28(MouseEvent me) {
+
+    }
+
+    // Metodos Tiles de Arena
+    private void mouseClick34(MouseEvent me) {
+
+    }
+
+    private void mouseClick79(MouseEvent me) {
+
+    }
+
+    private void mouseClick85(MouseEvent me) {
+
+    }
+
+    private void mouseClick80(MouseEvent me) {
+
+    }
+
+    private void mouseClick86(MouseEvent me) {
+
+    }
+
+    private void mouseClick81(MouseEvent me) {
+
+    }
+
+    private void mouseClick78(MouseEvent me) {
+
+    }
+
+    private void mouseClick16(MouseEvent me) {
+
+    }
+
+    private void mouseClick23(MouseEvent me) {
+
+    }
+
+    private void mouseClick84(MouseEvent me) {
+
+    }
+
+    private void mouseClick88(MouseEvent me) {
+
+    }
+
+    private void mouseClick82(MouseEvent me) {
+
+    }
+
+    private void mouseClick89(MouseEvent me) {
+
+    }
+
+    private void mouseClick83(MouseEvent me) {
+
+    }
+
+    private void mouseClick25(MouseEvent me) {
+
+    }
+
+    private void mouseClick87(MouseEvent me) {
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
