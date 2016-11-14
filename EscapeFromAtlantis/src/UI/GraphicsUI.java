@@ -40,11 +40,15 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
      */
     public GraphicsUI() {
         initComponents();
+        initComponentsForest();
+        initComponentsMountain();
+        initComponentsSand();
+
         this.gameMaster = new GameMaster(this);
     }
 
     public void initializePlayer() {
-        gameMaster.initializePlayer();
+        gameMaster.initializePlayer("");
     }
 
     public void menu() {
@@ -368,6 +372,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     }
 
     private void mouseClick8(MouseEvent me) {
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
 
     }
 

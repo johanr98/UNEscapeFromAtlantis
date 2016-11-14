@@ -41,10 +41,6 @@ public class GameMaster implements Serializable {
 
     }
 
-
-   
-
-
     public int endGame(Villager villager) {
         if ((villager.getPositionX() == 0 && villager.getPositionY() == 0)
                 || ((villager.getPositionX() == 4 && villager.getPositionY() == 0))) {
@@ -55,10 +51,9 @@ public class GameMaster implements Serializable {
             return 0;
         }
     }
-    
 
     public void eliminateWhale() {
-        Animal whale = consola.selectAnimal();
+        //Animal whale = consola.selectAnimal();
         if (whale.getName().equals("Whale")) {
             whale = null;
         } else {
