@@ -1324,14 +1324,6 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo.png"))); // NOI18N
         jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
-        for (Component c : this.getComponents()) {
-            if (c instanceof JLabel) {
-
-                ((JLabel) c).setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-            }
-        }
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -1395,6 +1387,14 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1601, 1601, 1601))
         );
+
+        for (Component c : jPanel2.getComponents()) {
+            if (c instanceof JLabel) {
+
+                ((JLabel) c).setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+            }
+        }
 
         pack();
     }
