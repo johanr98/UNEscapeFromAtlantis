@@ -176,7 +176,7 @@
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -188,7 +188,7 @@
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -200,7 +200,7 @@
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -212,7 +212,7 @@
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -224,7 +224,7 @@
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -236,7 +236,7 @@
         <Component class="javax.swing.JLabel" name="jLabel16">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -248,7 +248,7 @@
         <Component class="javax.swing.JLabel" name="jLabel17">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -260,7 +260,7 @@
         <Component class="javax.swing.JLabel" name="jLabel18">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -272,7 +272,7 @@
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -284,7 +284,7 @@
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -296,7 +296,7 @@
         <Component class="javax.swing.JLabel" name="jLabel21">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -308,7 +308,7 @@
         <Component class="javax.swing.JLabel" name="jLabel22">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -320,7 +320,7 @@
         <Component class="javax.swing.JLabel" name="jLabel23">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/forest tile.png"/>
+              <Image iconType="3" name="/Imagenes/Mountain tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -332,7 +332,7 @@
         <Component class="javax.swing.JLabel" name="jLabel24">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -349,14 +349,14 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="649" y="280" width="50" height="-1"/>
+              <AbsoluteConstraints x="648" y="280" width="50" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -368,7 +368,7 @@
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -380,7 +380,7 @@
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -392,7 +392,7 @@
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -404,7 +404,7 @@
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -416,7 +416,7 @@
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -428,7 +428,7 @@
         <Component class="javax.swing.JLabel" name="jLabel32">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -440,7 +440,7 @@
         <Component class="javax.swing.JLabel" name="jLabel33">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -464,7 +464,7 @@
         <Component class="javax.swing.JLabel" name="jLabel35">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -476,7 +476,7 @@
         <Component class="javax.swing.JLabel" name="jLabel36">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -500,7 +500,7 @@
         <Component class="javax.swing.JLabel" name="jLabel38">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -512,7 +512,7 @@
         <Component class="javax.swing.JLabel" name="jLabel39">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -524,7 +524,7 @@
         <Component class="javax.swing.JLabel" name="jLabel40">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -536,7 +536,7 @@
         <Component class="javax.swing.JLabel" name="jLabel41">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/sand tile.png"/>
+              <Image iconType="3" name="/Imagenes/forest tile.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -781,7 +781,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="552" y="112" width="50" height="-1"/>
+              <AbsoluteConstraints x="600" y="112" width="50" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -965,10 +965,22 @@
             </Constraint>
           </Constraints>
         </Component>
+        <Component class="javax.swing.JLabel" name="jLabel77">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagenes/Water tile.png"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="552" y="112" width="50" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/fondo con bordes.png"/>
+              <Image iconType="3" name="/Imagenes/Mapa de fondo.png"/>
             </Property>
             <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jPanel2"/>
