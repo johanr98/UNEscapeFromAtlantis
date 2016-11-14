@@ -1323,6 +1323,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         }
         //</editor-fold>
         GraphicsUI x = new GraphicsUI();
+        x.setVisible(true);
     }
 
     // Inicio Metodos de uso en la clase Effect
