@@ -22,6 +22,7 @@ import java.io.ObjectOutputStream;
 public class Menu extends javax.swing.JFrame {
 
     private GraphicsUI pantallaDeJuego;
+    private GameMaster gameMaster;
 
     /**
      * Creates new form Menu
@@ -29,6 +30,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.pantallaDeJuego = new GraphicsUI();
+        this.gameMaster = pantallaDeJuego.getGameMaster();
     }
 
     /**

@@ -47,6 +47,10 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         this.gameMaster = new GameMaster(this);
     }
 
+    public GameMaster getGameMaster() {
+        return gameMaster;
+    }
+    
     public void initializePlayer() {
         gameMaster.initializePlayer("");
     }
