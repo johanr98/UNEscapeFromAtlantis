@@ -373,197 +373,196 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     private void mouseClick8(MouseEvent me) {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
-
     }
 
     private void mouseClick7(MouseEvent me) {
-
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick10(MouseEvent me) {
-
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick4(MouseEvent me) {
-
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick6(MouseEvent me) {
-
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick5(MouseEvent me) {
-
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick14(MouseEvent me) {
-
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick12(MouseEvent me) {
-
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick13(MouseEvent me) {
-
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick11(MouseEvent me) {
-
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick22(MouseEvent me) {
-
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick21(MouseEvent me) {
-
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick20(MouseEvent me) {
-
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick19(MouseEvent me) {
-
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick18(MouseEvent me) {
-
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick15(MouseEvent me) {
-
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     // Metodos Tiles de bosque
     private void mouseClick41(MouseEvent me) {
-
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick38(MouseEvent me) {
-
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick17(MouseEvent me) {
-
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick24(MouseEvent me) {
-
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick36(MouseEvent me) {
-
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick40(MouseEvent me) {
-
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick35(MouseEvent me) {
-
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick39(MouseEvent me) {
-
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick33(MouseEvent me) {
-
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick26(MouseEvent me) {
-
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick32(MouseEvent me) {
-
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick27(MouseEvent me) {
-
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick31(MouseEvent me) {
-
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick30(MouseEvent me) {
-
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick29(MouseEvent me) {
-
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick28(MouseEvent me) {
-
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     // Metodos Tiles de Arena
     private void mouseClick34(MouseEvent me) {
-
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick79(MouseEvent me) {
-
+        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick85(MouseEvent me) {
-
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick80(MouseEvent me) {
-
+        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick86(MouseEvent me) {
-
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick81(MouseEvent me) {
-
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick78(MouseEvent me) {
-
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick16(MouseEvent me) {
-
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick23(MouseEvent me) {
-
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick84(MouseEvent me) {
-
+        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick88(MouseEvent me) {
-
+        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick82(MouseEvent me) {
-
+        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick89(MouseEvent me) {
-
+        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick83(MouseEvent me) {
-
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick25(MouseEvent me) {
-
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     private void mouseClick87(MouseEvent me) {
-
+        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
     }
 
     /**
