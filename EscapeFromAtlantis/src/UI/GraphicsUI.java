@@ -38,21 +38,104 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         //this.gameMaster = new GameMaster(this, new Board());
     }
 
-    private void initComponents2() {
+    private void initComponentsMountain() {
 
         jLabel8.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                fireActionPerformed(new ActionEvent(jLabel8.this, ActionEvent.ACTION_PERFORMED,
-                        "SecretMessage"));
+                mouseClick8(me);
             }
         });
 
-        ActionEvent a = new MouseAdapter() {
+        jLabel7.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                fireActionPerformed(new ActionEvent(MyLabel.this, ActionEvent.ACTION_PERFORMED,
-                        "SecretMessage"));
+                mouseClick7(me);
             }
-        }
+        });
+
+        jLabel10.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick10(me);
+            }
+        });
+
+        jLabel4.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick4(me);
+            }
+        });
+
+        jLabel6.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick6(me);
+            }
+        });
+
+        jLabel5.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick5(me);
+            }
+        });
+
+        jLabel14.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick14(me);
+            }
+        });
+
+        jLabel12.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick12(me);
+            }
+        });
+
+        jLabel13.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick13(me);
+            }
+        });
+
+        jLabel11.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick11(me);
+            }
+        });
+
+        jLabel22.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick22(me);
+            }
+        });
+
+        jLabel21.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick21(me);
+            }
+        });
+
+        jLabel20.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick20(me);
+            }
+        });
+
+        jLabel19.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick19(me);
+            }
+        });
+
+        jLabel18.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick18(me);
+            }
+        });
+
+        jLabel15.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                mouseClick15(me);
+            }
+        });
+
     }
 
     /**
