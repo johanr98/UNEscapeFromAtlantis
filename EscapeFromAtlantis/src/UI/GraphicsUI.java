@@ -7,6 +7,10 @@ package UI;
 
 import Logic.GameMaster;
 import java.awt.Desktop;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -21,7 +25,7 @@ import java.util.logging.Logger;
  *
  * @author johans
  */
-public class GraphicsUI extends javax.swing.JFrame {
+public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     String separador = System.getProperty("file.separator");
     private GameMaster gameMaster;
@@ -32,6 +36,23 @@ public class GraphicsUI extends javax.swing.JFrame {
     public GraphicsUI() {
         initComponents();
         //this.gameMaster = new GameMaster(this, new Board());
+    }
+
+    private void initComponents2() {
+
+        jLabel8.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                fireActionPerformed(new ActionEvent(jLabel8.this, ActionEvent.ACTION_PERFORMED,
+                        "SecretMessage"));
+            }
+        });
+
+        ActionEvent a = new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                fireActionPerformed(new ActionEvent(MyLabel.this, ActionEvent.ACTION_PERFORMED,
+                        "SecretMessage"));
+            }
+        }
     }
 
     /**
@@ -455,6 +476,11 @@ public class GraphicsUI extends javax.swing.JFrame {
     }
 
     public void drawBoat() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
