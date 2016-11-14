@@ -581,6 +581,12 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
         jSeparator2 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
+        jLabel181 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        jLabel152 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel159 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -725,17 +731,13 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel146 = new javax.swing.JLabel();
         jLabel147 = new javax.swing.JLabel();
         jLabel148 = new javax.swing.JLabel();
-        jLabel149 = new javax.swing.JLabel();
-        jLabel150 = new javax.swing.JLabel();
         jLabel151 = new javax.swing.JLabel();
-        jLabel152 = new javax.swing.JLabel();
         jLabel153 = new javax.swing.JLabel();
         jLabel154 = new javax.swing.JLabel();
         jLabel155 = new javax.swing.JLabel();
         jLabel156 = new javax.swing.JLabel();
         jLabel157 = new javax.swing.JLabel();
         jLabel158 = new javax.swing.JLabel();
-        jLabel159 = new javax.swing.JLabel();
         jLabel160 = new javax.swing.JLabel();
         jLabel161 = new javax.swing.JLabel();
         jLabel162 = new javax.swing.JLabel();
@@ -750,6 +752,13 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel170 = new javax.swing.JLabel();
         jLabel171 = new javax.swing.JLabel();
         jLabel172 = new javax.swing.JLabel();
+        jLabel173 = new javax.swing.JLabel();
+        jLabel174 = new javax.swing.JLabel();
+        jLabel175 = new javax.swing.JLabel();
+        jLabel176 = new javax.swing.JLabel();
+        jLabel178 = new javax.swing.JLabel();
+        jLabel179 = new javax.swing.JLabel();
+        jLabel180 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -763,6 +772,26 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("-"));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel181.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel181.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blue villager.png"))); // NOI18N
+        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 30, 20));
+
+        jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 30, -1));
+
+        jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 30, -1));
+
+        jLabel177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 30, -1));
+
+        jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
+
+        jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 30, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, 30, -1));
@@ -1199,17 +1228,8 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel148.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 490, 50, -1));
 
-        jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
-        jPanel2.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 490, 50, -1));
-
-        jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
-        jPanel2.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 489, 50, -1));
-
         jLabel151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(436, 488, 50, -1));
-
-        jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
-        jPanel2.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 487, 50, -1));
 
         jLabel153.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(532, 489, 50, -1));
@@ -1228,9 +1248,6 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
         jLabel158.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
         jPanel2.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 280, 50, -1));
-
-        jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
-        jPanel2.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 280, 50, -1));
 
         jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
         jPanel2.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 322, 50, -1));
@@ -1274,6 +1291,27 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
         jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
         jPanel2.add(jLabel172, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 238, 50, -1));
+
+        jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jPanel2.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 280, 50, -1));
+
+        jLabel174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel174, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 490, 50, -1));
+
+        jLabel175.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 489, 50, -1));
+
+        jLabel176.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
+        jPanel2.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 487, 50, -1));
+
+        jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 30, -1));
+
+        jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 30, -1));
+
+        jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jPanel2.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 30, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo con bordes.png"))); // NOI18N
         jLabel1.setLabelFor(jPanel2);
@@ -1478,7 +1516,16 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JLabel jLabel170;
     private javax.swing.JLabel jLabel171;
     private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
+    private javax.swing.JLabel jLabel174;
+    private javax.swing.JLabel jLabel175;
+    private javax.swing.JLabel jLabel176;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
