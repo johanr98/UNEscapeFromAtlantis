@@ -6,7 +6,7 @@
 package Logic;
 
 import Data.*;
-
+import UI.*;
 /**
  *
  * @author macas
@@ -15,6 +15,7 @@ public class Movement {
 
     private String direction;
     private int numberOfTiles;
+    private GraphicsUI consola;
 
     public String getDirection() {
         return direction;
@@ -42,6 +43,48 @@ public class Movement {
         } else {
 
             village.setTilePosition(posX, posY);
+        }
+    }
+    
+    public void moveVillagers(Villager villager, int x, int y) {
+        villager.setTilePosition(x, y);
+    }
+
+    /**
+     * Determina el final del juego
+     *
+     * @param villager - revisa que el cosito este es una casilla de salvación
+     * @return retorna un entero, que sale del loop del juego
+     */
+    
+
+    public void moveSeaSerpent() {
+        Animal seaSerpent = consola.selectAnimal();
+        if (seaSerpent.getName().equals("Sea Serpent")) {
+            seaSerpent.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja una Serpiente Marina!");
+            moveSeaSerpent();
+        }
+    }
+
+    public void moveShark() {
+        Animal shark = consola.selectAnimal();
+        if (shark.getName().equals("Shark")) {
+            shark.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoja un Tiburón!");
+            moveShark();
+        }
+    }
+
+    public void moveWhale() {
+        Animal whale = consola.selectAnimal();
+        if (whale.getName().equals("Whale")) {
+            whale.setPosition(consola.selectTile().getPosition());
+        } else {
+            consola.printString("Escoje una Ballena!");
+            moveWhale();
         }
     }
 
