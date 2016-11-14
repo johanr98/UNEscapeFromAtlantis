@@ -52,9 +52,9 @@ public class GameMaster implements Serializable {
         }
     }// fin start
 
-    public void inicializarJugador() {
-        Player[] players = new Player[numPlayers];
-        for (int i = 0; i < numPlayers; i++) {
+    public void inicializarJugador(int a) {
+        Player[] players = new Player[a];
+        for (int i = 0; i < a; i++) {
             consola.printString("Ingrese los datos del jugador " + i);
             players[i] = consola.initializePlayer();
         }

@@ -17,17 +17,19 @@ public class ConsoleUI {
 
     private Scanner lector = new Scanner(System.in);
     private GameMaster gameMaster;
-    private Scanner entero = new Scanner(System.in);
-
+    
+    // Constructor 
     public ConsoleUI(Board board) {
         gameMaster = new GameMaster(this, board);
-
+    }
+    
+    public int returnInt() {
+        return Integer.parseInt(lector.nextLine());
     }
 
     public Player initializePlayer() {
-        System.out.println("Ingrese el nombre del nuevo jugador y la posicion (x,y):");
-
-        return new Player(lector.nextLine(), entero.nextInt(), entero.nextInt());
+        System.out.println("Ingrese el nombre del nuevo ");
+        return new Player(lector.nextLine());
     }
 
     public void menu() {
@@ -37,16 +39,14 @@ public class ConsoleUI {
         System.out.println("(0).Salir");
     }
 
-    public int returnInt() {
-        return Integer.parseInt(lector.nextLine());
-    }
+    
 
     public void printString(String something) {
         System.out.println(something);
     }
 
     //Metodos de seleccion de elementos del tablero
-    public Animal selectAnimal() {
+    public  Animal selectAnimal() {
 
     }
 
