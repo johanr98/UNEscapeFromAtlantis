@@ -26,6 +26,7 @@ import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -40,6 +41,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     // atributo que me dira si tengo que quitar tiles o no
     private boolean changeTile;
 
+    // atributo que me guarda el JLabel del Villager que quiero mover
+    private JLabel positionOfVillager;
+
     /**
      * Creates new form GraphicsUI
      */
@@ -48,6 +52,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         initComponentsForest();
         initComponentsMountain();
         initComponentsSand();
+        //initComponentsVillagers();
 
         this.gameMaster = new GameMaster(this);
         menu = new Menu(this);
@@ -55,6 +60,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         menu.setVisible(true);
         this.setVisible(false);
         changeTile = false;
+
     }
 
     public GameMaster getGameMaster() {
@@ -73,6 +79,17 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         System.out.println(something);
     }
 
+    public void moveTo(JLabel jLabel) {
+        System.out.println(positionOfVillager.getAlignmentX());
+        System.out.println(jLabel181.getAlignmentX());
+        if (positionOfVillager != null) {
+            positionOfVillager.setBounds(jLabel.getBounds());
+        } else {
+            JOptionPane.showMessageDialog(this, "Escoge un Aldeano que mover "
+                    + "primero!");
+        }
+    }
+
     //Metodos de seleccion de elementos del tablero
     public void selectAnimal() {
 
@@ -86,6 +103,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Montaña
+     */
     private void initComponentsMountain() {
 
         jLabel169.addMouseListener(new MouseAdapter() {
@@ -186,6 +206,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Bosque
+     */
     private void initComponentsForest() {
         jLabel41.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
@@ -285,6 +308,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Arena
+     */
     private void initComponentsSand() {
 
         jLabel34.addMouseListener(new MouseAdapter() {
@@ -385,6 +411,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    // Metodos de Tiles de Montaña
     private void mouseClick169(MouseEvent me) {
         if (changeTile) {
             jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
@@ -399,7 +426,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         if (changeTile) {
             jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
             changeTile = false;
+
         } else {
+            moveTo(jLabel7);
 
         }
     }
@@ -1022,21 +1051,32 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel181.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel181.setForeground(new java.awt.Color(240, 240, 240));
         jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blue villager.png"))); // NOI18N
-        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 30, 20));
+        jLabel181.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel181.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel181MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 10, 20));
 
         jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel150.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 30, -1));
 
         jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel152.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 30, -1));
 
         jLabel177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel177.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 30, -1));
 
         jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel149.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
 
         jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel159.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 30, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
@@ -1613,12 +1653,15 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 487, 50, -1));
 
         jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel178.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 30, -1));
 
         jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel179.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 30, -1));
 
         jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel180.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 30, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo con bordes.png"))); // NOI18N
@@ -1738,6 +1781,10 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel181MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel181MouseClicked
+        positionOfVillager = jLabel181;
+    }//GEN-LAST:event_jLabel181MouseClicked
 
     /**
      * @param args the command line arguments
