@@ -5,12 +5,15 @@
  */
 package UI;
 
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
 /**
  *
  * @author johanr98 jsromerod@unal.edu.co
  */
 public class NuevaPartida extends javax.swing.JFrame {
-    
+
     private Menu menu;
 
     /**
@@ -18,9 +21,9 @@ public class NuevaPartida extends javax.swing.JFrame {
      */
     public NuevaPartida(Menu menu) {
         initComponents();
-        
+
         this.menu = menu;
-        
+
         jPanel2.setVisible(false);
         jPanel5.setVisible(false);
         jPanel6.setVisible(false);
@@ -76,11 +79,22 @@ public class NuevaPartida extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blue villager.png"))); // NOI18N
         jLabel4.setText("Equipo azul");
 
-        jTextField1.setText("Nombre jugador 1");
+        jTextField1.setToolTipText("Nombre del jugador");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Empezar!");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jTextField2.setText("Nombre jugador 2");
+        jTextField2.setToolTipText("Nombre del jugador");
+        jTextField2.setName(""); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -104,14 +118,13 @@ public class NuevaPartida extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton2)
-                .addGap(45, 45, 45)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(99, 99, 99)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel3)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(46, 46, 46)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -191,20 +204,25 @@ public class NuevaPartida extends javax.swing.JFrame {
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/red villager.png"))); // NOI18N
         jLabel14.setText("Equipo rojo");
 
-        jButton4.setText("jButton4");
+        jButton4.setText("Empezar!");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
-        jTextField6.setText("Nombre jugador 1");
+        jTextField6.setToolTipText("Nombre jugador ");
 
-        jTextField7.setText("Nombre jugador 2");
+        jTextField7.setToolTipText("Nombre jugador ");
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField7ActionPerformed(evt);
             }
         });
 
-        jTextField8.setText("Nombre jugador 3");
+        jTextField8.setToolTipText("Nombre jugador ");
 
-        jTextField9.setText("Nombre jugador 4");
+        jTextField9.setToolTipText("Nombre jugador ");
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
@@ -237,17 +255,16 @@ public class NuevaPartida extends javax.swing.JFrame {
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton4)
-                .addGap(42, 42, 42)
+                .addGap(56, 56, 56)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
+                .addGap(47, 47, 47)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -269,13 +286,18 @@ public class NuevaPartida extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/red villager.png"))); // NOI18N
         jLabel10.setText("Equipo rojo");
 
-        jButton3.setText("jButton3");
+        jButton3.setText("Empezar!");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
-        jTextField3.setText("Nombre jugador 1");
+        jTextField3.setToolTipText("Nombre jugador ");
 
-        jTextField4.setText("Nombre jugador 2");
+        jTextField4.setToolTipText("Nombre jugador ");
 
-        jTextField5.setText("Nombre jugador 3");
+        jTextField5.setToolTipText("Nombre jugador ");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -301,9 +323,8 @@ public class NuevaPartida extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton3)
-                .addGap(44, 44, 44)
+                .addGap(55, 55, 55)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -315,7 +336,7 @@ public class NuevaPartida extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -386,8 +407,141 @@ public class NuevaPartida extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
+     * Boton empezar, para dos jugadores
+     *
+     * @param evt
+     */
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+        try {
+            menu.setPlayer(jTextField1.getText());
+            menu.setPlayer(jTextField2.getText());
+            this.setVisible(false);
+            menu.getPantallaDeJuego().setVisible(true);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ingrese nombres validos para los"
+                    + " jugadores");
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    /**
+     * Boton empezar, para 3 jugadores
+     *
+     * @param evt
+     */
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        try {
+            menu.setPlayer(jTextField3.getText());
+            menu.setPlayer(jTextField4.getText());
+            menu.setPlayer(jTextField5.getText());
+            this.setVisible(false);
+            menu.getPantallaDeJuego().setVisible(true);
+            menu.getGameMaster().play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ingrese nombres validos para los"
+                    + " jugadores");
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    /**
+     * Boton empezar, para 4 jugadores
+     *
+     * @param evt
+     */
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        try {
+            menu.setPlayer(jTextField6.getText());
+            menu.setPlayer(jTextField7.getText());
+            menu.setPlayer(jTextField8.getText());
+            menu.setPlayer(jTextField9.getText());
+            this.setVisible(false);
+            menu.getPantallaDeJuego().setVisible(true);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ingrese nombres validos para los"
+                    + " jugadores");
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    /**
      * @param args the command line arguments
      */
+    public JTextField getjTextField1() {
+        return jTextField1;
+    }
+
+    public void setjTextField1(JTextField jTextField1) {
+        this.jTextField1 = jTextField1;
+    }
+
+    public JTextField getjTextField2() {
+        return jTextField2;
+    }
+
+    public void setjTextField2(JTextField jTextField2) {
+        this.jTextField2 = jTextField2;
+    }
+
+    public JTextField getjTextField3() {
+        return jTextField3;
+    }
+
+    public void setjTextField3(JTextField jTextField3) {
+        this.jTextField3 = jTextField3;
+    }
+
+    public JTextField getjTextField4() {
+        return jTextField4;
+    }
+
+    public void setjTextField4(JTextField jTextField4) {
+        this.jTextField4 = jTextField4;
+    }
+
+    public JTextField getjTextField5() {
+        return jTextField5;
+    }
+
+    public void setjTextField5(JTextField jTextField5) {
+        this.jTextField5 = jTextField5;
+    }
+
+    public JTextField getjTextField6() {
+        return jTextField6;
+    }
+
+    public void setjTextField6(JTextField jTextField6) {
+        this.jTextField6 = jTextField6;
+    }
+
+    public JTextField getjTextField7() {
+        return jTextField7;
+    }
+
+    public void setjTextField7(JTextField jTextField7) {
+        this.jTextField7 = jTextField7;
+    }
+
+    public JTextField getjTextField8() {
+        return jTextField8;
+    }
+
+    public void setjTextField8(JTextField jTextField8) {
+        this.jTextField8 = jTextField8;
+    }
+
+    public JTextField getjTextField9() {
+        return jTextField9;
+    }
+
+    public void setjTextField9(JTextField jTextField9) {
+        this.jTextField9 = jTextField9;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

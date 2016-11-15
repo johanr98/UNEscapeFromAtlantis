@@ -14,13 +14,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import Data.*;
 
 /**
  *
  * @author johanr98 jsromerod@unal.edu.co
  */
 public class Menu extends javax.swing.JFrame {
-    
+
     private GraphicsUI pantallaDeJuego;
     private GameMaster gameMaster;
     private NuevaPartida nuevaPartida;
@@ -33,6 +34,20 @@ public class Menu extends javax.swing.JFrame {
         this.pantallaDeJuego = pantallaDeJuego;
         this.gameMaster = pantallaDeJuego.getGameMaster();
         this.nuevaPartida = new NuevaPartida(this);
+    }
+
+    public GameMaster getGameMaster() {
+        return gameMaster;
+    }
+
+    
+    
+    public void setPlayer(String name) {
+        gameMaster.initializePlayer(name);
+    }
+
+    public GraphicsUI getPantallaDeJuego() {
+        return pantallaDeJuego;
     }
 
     /**
@@ -84,6 +99,11 @@ public class Menu extends javax.swing.JFrame {
         });
 
         jButton5.setText("Salir");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Guardar juego");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -122,21 +142,21 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2)
-                        .addContainerGap(22, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                         .addComponent(jButton2)
-                        .addGap(49, 49, 49)
+                        .addGap(55, 55, 55)
                         .addComponent(jButton3)
-                        .addGap(53, 53, 53)
+                        .addGap(55, 55, 55)
                         .addComponent(jButton1)
-                        .addGap(47, 47, 47)
-                        .addComponent(jButton5)
-                        .addGap(54, 54, 54)
+                        .addGap(55, 55, 55)
                         .addComponent(jButton6)
-                        .addGap(51, 51, 51))))
+                        .addGap(56, 56, 56)
+                        .addComponent(jButton5)
+                        .addGap(54, 54, 54))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -186,7 +206,7 @@ public class Menu extends javax.swing.JFrame {
             OOS.writeObject(gameMaster);
             OOS.close();
             FOS.close();
-            
+
         } catch (FileNotFoundException ex) {
             System.err.print(ex);
         } catch (IOException ex) {
@@ -208,6 +228,10 @@ public class Menu extends javax.swing.JFrame {
         nuevaPartida.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

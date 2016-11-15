@@ -17,12 +17,8 @@ public class Villager implements Serializable {
     private int value;
     private boolean inWater;
 
-    private int positionX;
-    private int positionY;
-
-    public Villager(int x, int y) {
-        positionX = x;
-        positionY = y;
+    public Villager(int value) {
+        this.value = value;
         inWater = false;
     }
 
@@ -42,16 +38,4 @@ public class Villager implements Serializable {
         this.inWater = inWater;
     }
 
-    public int getPositionX() {
-        return positionX;
-    }
-
-    public int getPositionY() {
-        return positionY;
-    }
-
-    public void setTilePosition(int x, int y) {
-        positionX = x;
-        positionY = y;
-    }
 }
