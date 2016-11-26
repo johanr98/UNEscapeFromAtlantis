@@ -81,7 +81,10 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel8.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
                 mouseClick8(me);
-            }
+//                jLabel8.getX();
+//                jLabel8.getY();
+            } 
+            
         });
 
         jLabel7.addMouseListener(new MouseAdapter() {
@@ -776,7 +779,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel181.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel181.setForeground(new java.awt.Color(240, 240, 240));
         jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blue villager.png"))); // NOI18N
-        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 30, 20));
+        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 30, 20));
 
         jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
         jPanel2.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 30, -1));
@@ -809,19 +812,19 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
-        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, -1, -1));
+        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 462, -1, -1));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
-        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 30, -1));
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(752, 125, 30, -1));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
-        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 30, -1));
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(731, 499, 30, -1));
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
-        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 30, -1));
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 292, 30, -1));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
-        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 30, -1));
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 84, 30, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 30, 20));
