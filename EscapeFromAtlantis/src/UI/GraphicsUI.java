@@ -10,6 +10,7 @@ import Data.Boat;
 import Data.Player;
 import Data.Tile;
 import Logic.GameMaster;
+import java.awt.Component;
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,6 +25,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,6 +38,12 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
     private GameMaster gameMaster;
     private Menu menu;
 
+    // atributo que me dira si tengo que quitar tiles o no
+    private boolean changeTile;
+
+    // atributo que me guarda el JLabel del Villager que quiero mover
+    private JLabel positionOfVillager;
+
     /**
      * Creates new form GraphicsUI
      */
@@ -43,14 +52,21 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         initComponentsForest();
         initComponentsMountain();
         initComponentsSand();
+        //initComponentsVillagers();
 
         this.gameMaster = new GameMaster(this);
+        menu = new Menu(this);
+
+        menu.setVisible(true);
+        this.setVisible(false);
+        changeTile = false;
+
     }
 
     public GameMaster getGameMaster() {
         return gameMaster;
     }
-    
+
     public void initializePlayer() {
         gameMaster.initializePlayer("");
     }
@@ -61,6 +77,17 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     public void printString(String something) {
         System.out.println(something);
+    }
+
+    public void moveTo(JLabel jLabel) {
+        System.out.println(positionOfVillager.getAlignmentX());
+        System.out.println(jLabel181.getAlignmentX());
+        if (positionOfVillager != null) {
+            positionOfVillager.setBounds(jLabel.getBounds());
+        } else {
+            JOptionPane.showMessageDialog(this, "Escoge un Aldeano que mover "
+                    + "primero!");
+        }
     }
 
     //Metodos de seleccion de elementos del tablero
@@ -76,15 +103,23 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Montaña
+     */
     private void initComponentsMountain() {
 
-        jLabel8.addMouseListener(new MouseAdapter() {
+        jLabel169.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
+<<<<<<< HEAD
                 mouseClick8(me);
 //                jLabel8.getX();
 //                jLabel8.getY();
             } 
             
+=======
+                mouseClick169(me);
+            }
+>>>>>>> origin/master
         });
 
         jLabel7.addMouseListener(new MouseAdapter() {
@@ -93,92 +128,95 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
             }
         });
 
-        jLabel10.addMouseListener(new MouseAdapter() {
+        jLabel170.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick10(me);
+                mouseClick170(me);
             }
         });
 
-        jLabel4.addMouseListener(new MouseAdapter() {
+        jLabel171.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick4(me);
+                mouseClick171(me);
             }
         });
 
-        jLabel6.addMouseListener(new MouseAdapter() {
+        jLabel168.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick6(me);
+                mouseClick168(me);
             }
         });
 
-        jLabel5.addMouseListener(new MouseAdapter() {
+        jLabel163.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick5(me);
+                mouseClick163(me);
             }
         });
 
-        jLabel14.addMouseListener(new MouseAdapter() {
+        jLabel172.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick14(me);
+                mouseClick172(me);
             }
         });
 
-        jLabel12.addMouseListener(new MouseAdapter() {
+        jLabel173.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick12(me);
+                mouseClick173(me);
             }
         });
 
-        jLabel13.addMouseListener(new MouseAdapter() {
+        jLabel162.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick13(me);
+                mouseClick162(me);
             }
         });
 
-        jLabel11.addMouseListener(new MouseAdapter() {
+        jLabel164.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick11(me);
+                mouseClick164(me);
             }
         });
 
-        jLabel22.addMouseListener(new MouseAdapter() {
+        jLabel160.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick22(me);
+                mouseClick160(me);
             }
         });
 
-        jLabel21.addMouseListener(new MouseAdapter() {
+        jLabel161.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick21(me);
+                mouseClick161(me);
             }
         });
 
-        jLabel20.addMouseListener(new MouseAdapter() {
+        jLabel167.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick20(me);
+                mouseClick167(me);
             }
         });
 
-        jLabel19.addMouseListener(new MouseAdapter() {
+        jLabel117.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick19(me);
+                mouseClick117(me);
             }
         });
 
-        jLabel18.addMouseListener(new MouseAdapter() {
+        jLabel165.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick18(me);
+                mouseClick165(me);
             }
         });
 
-        jLabel15.addMouseListener(new MouseAdapter() {
+        jLabel166.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
-                mouseClick15(me);
+                mouseClick166(me);
             }
         });
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Bosque
+     */
     private void initComponentsForest() {
         jLabel41.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent me) {
@@ -278,6 +316,9 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
+    /**
+     * Agregación de MouseListener a Tiles de Arena
+     */
     private void initComponentsSand() {
 
         jLabel34.addMouseListener(new MouseAdapter() {
@@ -378,207 +419,444 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
     }
 
-    private void mouseClick8(MouseEvent me) {
-        gameMaster.eliminateShark();
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    // Metodos de Tiles de Montaña
+    private void mouseClick169(MouseEvent me) {
+        if (changeTile) {
+            jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
+
     }
 
     private void mouseClick7(MouseEvent me) {
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+
+        } else {
+            moveTo(jLabel7);
+
+        }
     }
 
-    private void mouseClick10(MouseEvent me) {
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick170(MouseEvent me) {
+        if (changeTile) {
+            jLabel170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick4(MouseEvent me) {
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick171(MouseEvent me) {
+        if (changeTile) {
+            jLabel171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick6(MouseEvent me) {
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick168(MouseEvent me) {
+        if (changeTile) {
+            jLabel168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick5(MouseEvent me) {
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick163(MouseEvent me) {
+        if (changeTile) {
+            jLabel163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick14(MouseEvent me) {
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick172(MouseEvent me) {
+        if (changeTile) {
+            jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick12(MouseEvent me) {
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick173(MouseEvent me) {
+        if (changeTile) {
+            jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick13(MouseEvent me) {
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick162(MouseEvent me) {
+        if (changeTile) {
+            jLabel162.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick11(MouseEvent me) {
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick164(MouseEvent me) {
+        if (changeTile) {
+            jLabel164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick22(MouseEvent me) {
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick160(MouseEvent me) {
+        if (changeTile) {
+            jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick21(MouseEvent me) {
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick161(MouseEvent me) {
+        if (changeTile) {
+            jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick20(MouseEvent me) {
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick167(MouseEvent me) {
+        if (changeTile) {
+            jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick19(MouseEvent me) {
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick117(MouseEvent me) {
+        if (changeTile) {
+            jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick18(MouseEvent me) {
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick165(MouseEvent me) {
+        if (changeTile) {
+            jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    private void mouseClick15(MouseEvent me) {
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+    private void mouseClick166(MouseEvent me) {
+        if (changeTile) {
+            jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     // Metodos Tiles de bosque
     private void mouseClick41(MouseEvent me) {
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick38(MouseEvent me) {
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick17(MouseEvent me) {
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick24(MouseEvent me) {
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick36(MouseEvent me) {
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick40(MouseEvent me) {
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick35(MouseEvent me) {
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick39(MouseEvent me) {
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick33(MouseEvent me) {
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick26(MouseEvent me) {
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick32(MouseEvent me) {
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick27(MouseEvent me) {
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick31(MouseEvent me) {
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick30(MouseEvent me) {
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick29(MouseEvent me) {
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick28(MouseEvent me) {
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     // Metodos Tiles de Arena
     private void mouseClick34(MouseEvent me) {
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick79(MouseEvent me) {
-        jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick85(MouseEvent me) {
-        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick80(MouseEvent me) {
-        jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick86(MouseEvent me) {
-        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick81(MouseEvent me) {
-        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick78(MouseEvent me) {
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick16(MouseEvent me) {
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick23(MouseEvent me) {
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick84(MouseEvent me) {
-        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick88(MouseEvent me) {
-        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick82(MouseEvent me) {
-        jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick89(MouseEvent me) {
-        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick83(MouseEvent me) {
-        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick25(MouseEvent me) {
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
     private void mouseClick87(MouseEvent me) {
-        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+        if (changeTile) {
+            jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png")));
+            changeTile = false;
+        } else {
+
+        }
     }
 
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerated by the Form Editor.
-     */
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -767,6 +1045,8 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -779,39 +1059,60 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jLabel181.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel181.setForeground(new java.awt.Color(240, 240, 240));
         jLabel181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/blue villager.png"))); // NOI18N
+<<<<<<< HEAD
         jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 30, 20));
+=======
+        jLabel181.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel181.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel181MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 10, 20));
+>>>>>>> origin/master
 
         jLabel150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel150.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 30, -1));
 
         jLabel152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel152.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 30, -1));
 
         jLabel177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel177.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 30, -1));
 
         jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel149.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
 
         jLabel159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel159.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 30, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
+        jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, 30, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
+        jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, 30, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
+        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 30, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
+        jLabel14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, 30, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Whale.png"))); // NOI18N
+        jLabel15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+<<<<<<< HEAD
         jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 462, -1, -1));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
@@ -825,23 +1126,49 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
         jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 84, 30, -1));
+=======
+        jLabel22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, -1, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+        jLabel21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 30, -1));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+        jLabel20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 80, 30, -1));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+        jLabel19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 500, 30, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sea serpent.png"))); // NOI18N
+        jLabel18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 460, 30, -1));
+>>>>>>> origin/master
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 30, 20));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 30, 20));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 30, 20));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 30, 20));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, 20));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Shark.png"))); // NOI18N
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 30, 20));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
@@ -850,48 +1177,63 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 238, 50, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 281, 50, -1));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(528, 155, 50, -1));
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, 50, -1));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 155, 50, -1));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(651, 363, 50, -1));
 
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 323, 50, -1));
 
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(603, 364, 50, -1));
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 405, 50, -1));
 
         jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 405, 50, -1));
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 405, 50, -1));
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(436, 406, 50, -1));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 364, 50, -1));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 323, 50, -1));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(624, 155, 50, -1));
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 240, 50, -1));
 
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
@@ -902,15 +1244,19 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(747, 531, 50, -1));
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 156, 50, -1));
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 239, 50, -1));
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 196, 50, -1));
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/forest tile.png"))); // NOI18N
+        jLabel41.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 156, 50, -1));
 
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Finishtile.png"))); // NOI18N
@@ -1022,39 +1368,51 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 112, 50, -1));
 
         jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel78.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 282, 50, -1));
 
         jLabel79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel79.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 198, 50, -1));
 
         jLabel80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel80.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 241, 50, -1));
 
         jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel81.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 282, 50, -1));
 
         jLabel82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel82.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 324, 50, -1));
 
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel83.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 365, 50, -1));
 
         jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel84.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 280, 50, -1));
 
         jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel85.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 197, 50, -1));
 
         jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel86.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(673, 238, 50, -1));
 
         jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel87.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 406, 50, -1));
 
         jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel88.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(697, 279, 50, -1));
 
         jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sand tile.png"))); // NOI18N
+        jLabel89.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(674, 321, 50, -1));
 
         jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
@@ -1253,49 +1611,64 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 280, 50, -1));
 
         jLabel160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel160.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 322, 50, -1));
 
         jLabel161.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel161.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel161, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 321, 50, -1));
 
         jLabel162.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel162.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel162, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 275, 50, 60));
 
         jLabel163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
         jLabel163.setText("jLabel2");
+        jLabel163.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(529, 239, 50, -1));
 
         jLabel164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel164.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel164, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 322, 50, -1));
 
         jLabel117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel117.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 364, 50, -1));
 
         jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel165.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(505, 364, 50, -1));
 
         jLabel166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel166.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel166, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 364, 50, -1));
 
         jLabel167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel167.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel167, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 322, 50, -1));
 
         jLabel168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel168.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 239, 50, -1));
 
         jLabel169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel169.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel169, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 197, 50, -1));
 
         jLabel170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel170.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 197, 50, -1));
 
         jLabel171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel171.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel171, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 196, 50, -1));
 
         jLabel172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel172.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel172, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 238, 50, -1));
 
         jLabel173.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mountain tile.png"))); // NOI18N
+        jLabel173.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 280, 50, -1));
 
         jLabel174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Water tile.png"))); // NOI18N
@@ -1308,12 +1681,15 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         jPanel2.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 487, 50, -1));
 
         jLabel178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel178.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 30, -1));
 
         jLabel179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel179.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 30, -1));
 
         jLabel180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ship.png"))); // NOI18N
+        jLabel180.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 30, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo con bordes.png"))); // NOI18N
@@ -1340,7 +1716,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jButton4.setText("Menu");
@@ -1357,7 +1733,7 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1367,17 +1743,38 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jButton1.setText("Pasar Turno");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("Tirar Dado Animales");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1385,8 +1782,14 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(331, 331, 331)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(1601, 1601, 1601))
         );
 
@@ -1398,6 +1801,18 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         this.setVisible(false);
         menu.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        gameMaster.nextTurn();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel181MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel181MouseClicked
+        positionOfVillager = jLabel181;
+    }//GEN-LAST:event_jLabel181MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1426,16 +1841,13 @@ public class GraphicsUI extends javax.swing.JFrame implements ActionListener {
         }
         //</editor-fold>
         GraphicsUI x = new GraphicsUI();
-        x.setVisible(true);
-    }
-
-    // Inicio Metodos de uso en la clase Effect
-    public void pintarEfecto() {
 
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
