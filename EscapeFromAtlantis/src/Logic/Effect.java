@@ -20,6 +20,7 @@ public class Effect {
     public Effect(GraphicsUI graficadora, GameMaster master) {
         this.graficadora = graficadora;
         this.master = master;
+        
     }
 
     public void accionarEfecto(Tile tile) {
